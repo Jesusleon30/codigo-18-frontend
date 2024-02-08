@@ -32,6 +32,7 @@ div{
     padding: 30px;
     text-align: center;
     border-radius: 16px;
+  
 
     img {
     border-radius: 50%;
@@ -69,8 +70,8 @@ div{
       }
 
      a: hover  { 
-        background-color: hsl(75, 94%, 57%)
-        color:  black;
+        background-color:hsl(75, 94%, 57%);
+        color:black;
 
     }
 
