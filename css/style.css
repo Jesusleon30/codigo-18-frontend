@@ -1,81 +1,59 @@
 
-
-*{ 
-    margin: 0;
-    padding: 0;
-} 
-
-body { 
-    background-color: hsl(0, 0%, 8%);
-    color: white;
-    font-family: Helvetica;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-main { 
-
-    /*height seria 1 pantalla 100vh envez 2 pantallas seria 200vh y asi .... */
-    height: 100vh;
-
-    display: flex;
-    /* centrar de forma vertical solo si tenemos display sino no funciona*/
-    align-items: center;
-
-    /*centrar de forma orizzontale pero solo si existe flex */ 
-    justify-content: center;
-
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #090e16;
+  color: #fff;
 }
 
-div{ 
-
-    background-color:  hsl( 0, 0%, 12%);
-    width: 375px ;
-    padding: 30px;
-    text-align: center;
-    border-radius: 16px;
-  
-
-    img {
-    border-radius: 50%;
+nav {
+  display: flex;
+  /* space-between: Separa elementos de extremo a extremo */
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(123, 74, 226, 0.05);
+  /* margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 80px;
+  margin-right: 80px; */
+  margin: 30px 80px;
+  padding: 15px;
+  border-radius:  16px;
 }
 
-    h1 {
-        font-size: 24px;
-        margin-top: 20px
-      }
-      
-      h2 {
-        color: hsl(75, 94%, 57%);
-        font-size: 14px;
-        margin-top: 10px;
-      }
-      
-      p {
-        font-size: 14px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-      }
-      
-      ul {
-        list-style: none;
-      }
-      
-      ul > li > a {
-        text-decoration: none;
-        color: white;
-        display: block;
-        margin-top: 20px;
-        background-color: hsl(0, 0%, 20%);
-        padding: 15px;
-        border-radius: 8px;
-      }
 
-     a: hover  { 
-        background-color:hsl(75, 94%, 57%);
-        color:black;
+.nav-list {
+  display: flex;
+  list-style: none;
+  /* espacio entre cada elemento del contenedor */
+  gap: 20px;
+}
 
-    }
+.nav-list > li > a {
+  text-decoration: none;
+  color: #fff;
+}
 
-    }
+.nav-list > li > a:hover {
+  color: rgba(123, 74, 226, 0.5);
+}
 
+main {
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
 
+.gretting {
+  background-color: rgba(123, 74, 226, 0.05);
+  color: rgba(123, 74, 226, 0.5);
+  padding: 8px;
+  border-radius: 16px;
+}
 
