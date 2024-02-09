@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <nav>
+    <nav class="flex align-center" >
       <div>
         <img src="./images/logo-1.svg" width="35" height="40" alt="">
       </div>
       <div>
-        <ul
-          class="nav-list">
+        <ul class="nav-list flex">
           <li>
             <a href="#">Home</a>
           </li>
@@ -38,30 +37,72 @@
         </ul>
       </div>
     </nav>
-    <main>
+    <main class="flex align-center"  >
       <div>
-        <p>👋 Saludos!</p>
-        <h1>Jesus Hugo Retamozo Leon</h1>
-        <p>Frontend - Developer</p>
-        <div class="socil-links">
-          <a href="">Linkedin</a>
-          <a href="">Github</a>
-          <a href="">Instagram</a>
+        <span class="gretting">👋 Saludos!</span>
+        <h1 class="title">Jesus Hugo Retamozo Leon</h1>
+        <p class="description">Frontend - Developer</p>
+        <div class="social-links align-center">
+          <a href="">
+             <img src="./images/linkedin.svg" alt="">
+            </a>
+          <a href=""><img src="./images/github_2.svg" alt="">
+          </a>
+          <a href=""><img src="./images/behance.svg" alt="">
+          </a>
         </div>
       </div>
-      <div>
+      <div  class="container-profile">
         <img 
         src="./images/jesus.jpg"
          alt="Jesus Retamozo - Foto de perfil" />
-      </div>
-      <div>
-        <p>
-          <a href="#">Descargar CV</a>
-        </p>
-        <p>
-          <a href="">Vamos a conversar</a>
-        </p>
-      </div>
-    </main>
-  </body>
-</html>
+        </div>
+        <div class="container-contact">
+          <a href="#" class="align-center">
+            Descargar CV
+            <img src="./images/download.svg" alt="" />
+          </a>
+          <a href="" class="align-center">
+            <img src="./images/whatsapp.svg" alt="" />
+            Vamos a conversar
+          </a>
+        </div>
+
+      </main>
+      <section class="container-about-me">
+        <div>
+          <img 
+              src="./images/jesus.jpg"
+               alt="Jesus Retamozo - Foto de perfil" />
+            </div>
+        </div>
+        <div>
+          <span class="gretting">🧐 Sobre mi!</span>
+          <h2 class="mt-20">Jesus Hugo</h2>
+          <h2 class="mb-20">Retamozo Leon</h2>
+          <p class="mb-20">
+              👋 hola me llamo Jesus Retamozo</p>
+          <p class="mt-20" >
+            👨🏻‍💻 estoy en mi segunda semana de frontend.
+          </p>
+          <p class="mt-20" >
+            🎓 graduacion tecnico de los sistemas energeticos y
+            me voy actualizando en las nuevas tecnologias
+          </p>
+          <p class="mt-20" >
+            💡 intereses me gustaria trabajar como developer y 
+            asociarlo a la automazion industrial
+          </p>
+          <p class="mt-20">
+            🚀 trabajar desde qualquier parte del mundo seria mi preferencia
+          </p>
+        </div>
+      </section>
+    </body>
+  </html>
+
+
+
+
+
+

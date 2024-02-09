@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -10,11 +9,17 @@ body {
   color: #fff;
 }
 
-nav {
+.align-center {
+  align-items: center;
+}
+
+.flex {
   display: flex;
+}
+
+nav {
   /* space-between: Separa elementos de extremo a extremo */
   justify-content: space-between;
-  align-items: center;
   background-color: rgba(123, 74, 226, 0.05);
   /* margin-top: 30px;
   margin-bottom: 30px;
@@ -22,12 +27,10 @@ nav {
   margin-right: 80px; */
   margin: 30px 80px;
   padding: 15px;
-  border-radius:  16px;
+  border-radius: 16px;
 }
 
-
 .nav-list {
-  display: flex;
   list-style: none;
   /* espacio entre cada elemento del contenedor */
   gap: 20px;
@@ -44,10 +47,8 @@ nav {
 
 main {
   height: 50vh;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 30px;
+  padding: 30px 80px;
 }
 
 .gretting {
@@ -57,3 +58,79 @@ main {
   border-radius: 16px;
 }
 
+.title {
+  font-size: 52px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.container-profile > img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+}
+
+.container-contact > a {
+  text-decoration: none;
+  color: rgba(123, 74, 226, 0.5);
+}
+
+.container-contact > a:first-child {
+  display: flex;
+  gap: 5px;
+}
+
+.container-contact > a:last-child {
+  border: rgba(123, 74, 226, 0.5) solid;
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 16px;
+}
+
+.container-about-me {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 80px;
+}
+
+.container-about-me > div > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.mt-20 {
+  margin-top: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.container-about-me > div > h2 {
+  font-size: 48px;
+}
+
+.container-about-me > div > p {
+  color: rgba(255, 255, 255, 0.5);
+}
