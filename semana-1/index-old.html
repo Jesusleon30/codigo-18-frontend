@@ -6,67 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
+    <!-- div seria divisores-->
+    <div>
+         <!--solo existe hasta el h6-->
+         <h1></h1>Hola mundo, soy jesus estoy aprendiendo a programar></h1>
+         <h2>este es otro texto h2</h2>
+         <h3>ejemplo de h3</h3>
+         <h4>ejemplo de h4</h4>
+         <h5>ejemplo de h</h5>
+         <h6>ejemplo de h6</h6>
+    </div>
+    <div>
+        <!-- <b>programar</b> lo hace diventar en grosseto -->
+        <!-- <i>practicar</i> texto en cursivo -->
+        <p>hola estoy aprendiendo a <b> programar</b> y esto es un parrafo</p>
+        <!-- para saltar a la linea de abajo se puede usar el <br>
+        pero no es recomendable por eso se usa <p> -->
+        <p>que me ayuda a <i> practicar</i></p>
+    </div>
+    <div>
+        <!-- el atributo  aria-label se usa para el tipo de texto -->
+        <!-- los atributos van siempre al inicio h3 atributo ...-->
+        <h3 aria-label="Usando imagenes de internet">
+            Usando imagenes de internet
+        </h3>
+        <!-- la img no tiene en si un cierre pero tiene un autocierre -->
+        <!-- una buena practicar seria meterle el /> -->
+        <!-- <img src="" alt=""> -->
+<!-- una buena practicar seria meterle el /> -->
+        <img 
+        width="400"
+        height="300"
+        src="https://i.blogs.es/f824b1/new-project-3-1-/450_1000.jpeg" 
+        alt="foto de los vengadores" />
+        <!-- vamos en internet y buscamos una imagen
+        metemos copia l'indirizzo dell'immagine y lo copiamos en src -->
+        <!-- atributos width e height ancho y alto -->
+    </div>
+    <!-- aca combinamos una imagen a un sito youtube en este ejemplo -->
+    <!-- osea cuando haces click en la imagen vas directo a youtube -->
+        <a href="https://youtube.com"><img 
+        width="400"
+        height="300"
+        src="https://i.blogs.es/f824b1/new-project-3-1-/450_1000.jpeg" 
+        alt="foto de los vengadores" /></a>
+        <!--aca apenas hacemos click entras a otro sito 
+         pero reemplazando el nuestro -->
 
+         <!-- ahora para hacer en modo que no salgan de la pagina principal 
+            del web haremos un atributo target="_blank" asi abrimos otra web -->
 
-    <!-- esto es el titulo de la web -->
+        <a href="http://google.com" target="_blank">Google</a>
 
-</body>
-
-<!--solo existe hasta el h6-->
-
-<div> <!-- div seria divisores-->
-
-    <h1>hola mundo, soy jesus </h1>
-    <h2>este es otro texto h2 </h2>
-    <h3>ejemplo de h3 </h3>
-    <h4>ejemplo de h4 </h4>
-    <h5>ejemplo de h5 </h5>
-    </h6> ejemplo de h6 </h6>
-</div>
-<div>
- <p> <!-- son etiquetas-->
-    hola estoy aprendiendo  a <b>programar</b> y esto es parrafo </p>
-    <p>que me ayuda a <i>practicar</i></p>
-
-</div>
-
-<div>
-<h3 aria-label="usando imagenes de internet"> 
-    usando imagenes de internet
-<img 
- src="https://www.bing.com/images/blob?bcid=qNoPv835Fp8GHA"
- alt="foto de los vengadores"/>
-
- <a href="http://google.com">Google</a>
-
- width="300"
-
-
-</div>
-
-<div>
-    <h3>  lista ordenadas y no ordenadas </h3>
-    <p>lista de lenguagues</p>
-    <ol><li>java </li>
-        <li>php</li>
-    </ol>
- <p>lista no ordenada</p>
-
- <ul> 
-    <li> <a href="http://youtube.com"> </a>laravel  
-    <li>flask</li>
- </li>
-
- </ul>
-
-
-
-
-
-
-</div>
-
+        <div>
+            <h3>listas ordenadas y no ordenadas</h3>
+            <p>lista de lenguajes</p>
+            <ol>
+                <li>Javascript</li>
+                <li>C++</li>
+                <li>Typescript</li>
+                <li>Java</li>
+                <li>PHP</li>
+            </ol>
+            <p>Lista no ordenadas de frameworks</p>
+            <ul>
+                <li>NextJS</li>
+                <li>Laravel</li>
+                <li>Django</li>
+                <li>Flask</li>
+                <li>Svelte Kit</li>
+            </ul>
+        </div>
 </body>
 </html>
