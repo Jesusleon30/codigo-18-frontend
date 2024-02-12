@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Struttura HTML - primera pagina </title>
+</head>
+<body>
+    <!--todo el contenido-->
+    <!-- windows ctrl k c (provarlo) para hacer comentarios -->
+    <header>
+        <a href="">Logo</a>
+        <!-- la etiqueta nav sirve para elementos de navegancion 
+        nav li*4>a asi creo esto en una sola escritura osea genera 4 elementos de li y 
+        que en cada elemnto este la etiqueta a -->
+    
+        <nav>
+            <li><a href="">sobre mi</a></li>
+            <li><a href="">portafolio</a></li>
+            <li><a href="">servicios</a></li>
+            <li><a href="">contacto</a></li>
+        </nav>
+
+    </header>
+    <!-- la etiqueta main sirve para envolver todo el contenido de la pagina  -->
+    <main>
+        <!-- h1 titulo principal se escrive con minuscula todas la h de 1-6 -->
+        <h1>Titulo principal</h1>
+        <h1>Mi primera pagina bien hecha estructuralmente de HTML</h1>
+        <p>Con comentarios para esplicar todo lo hecho</p>
+        <!-- voy a crear sezioni para mi contenido
+        recordar que todos los contenidos van en sus etiquetas respectivas  
+    como ahora mirar cada section con h2  -->
+        <section>
+            <!-- contenido sobre mi en section h2  -->
+            <h2>sobre mi</h2>
+            <!-- voy a declarar contenido/informazion de tipo parrafo -->
+            <p>Me llamo Jesus Retamozo </p>
+        </section>
+        <!-- contenido portafolio en section h2 -->
+        <section>
+            <h2>portafolio</h2>
+            <p>Trabajos mios</p>
+        </section>
+        <!-- contenido servicios en section  h2 -->
+        <section>
+            <h2>servicios</h2>
+            <p>En cosa podria ayudar</p>
+        </section>
+        <!-- contenido contacto en section h2  -->
+        <section>
+            <h2>contacto</h2>
+            <!-- aca voy a utilizar las etiquetas de formulario 
+            el formulario sirve para tener informazion del usuario -->
+            <form action="">
+                <!-- etiqueta input para crear un elemeto de entrada 
+                voy agregar un atributo de placeholder para agregar un valor
+                en este caso con el valor nombre -->
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+                <input type="text" placeholder="correo">
+                <input type="text" placeholder="telefono">
+                <!-- voy a crear un button para enviar este formulario 
+                por defecto este ya tiene el valor type="submit" pero 
+            si gia lo tiene por defecto gia no lo pongo-->
+                <button>Enviar</button>
+                <!-- <button type="submit" >Enviar</button> -->
+                <!-- aca especifico que va hacer de tipo reset asi me limpia -->
+                <button type="reset">Limpiar</button>
+            </form>
+        </section>
+    </main>
+    <!-- ahora le ponemos la section footer seria  el final el pie -->
+    <footer>
+        <!-- informacion sobre la pagina  -->
+        <p>todos los derechos reservados</p>
+        <p>creado por codigo-18 desde canvas</p>
+    </footer>
+
+
+    
+</body>
+</html>
