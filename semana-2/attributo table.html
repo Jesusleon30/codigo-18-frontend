@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" style="width: 100%;">
+        <tr>
+            <!-- td*4{$} para hacer 4 td de 1 al 4 -->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table> 
+    <br/>
+       <!--otro table  -->
+       <table border="1" style="width: 100%;">
+        <tr>
+            <!-- td*4{$} para hacer 4 td de 1 al 4 -->
+            <td>1</td>
+            <td rowspan="2">2</td>
+            <!-- rowspan ocupa dos filas -->
+            <!-- ocupamos las cantidades de filas que deceamos -->
+            <td colspan="2">3</td>
+            <!-- attributo colspan ocupa dos espacios de la colunna -->
+            <!-- ocupamos la cantidad de celdas que deceamos -->
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table> 
+    <br/>
+    <!-- otro table  -->
+    <table border="1" style="width: 100%;">
+        <tr>
+            <!-- td*4{$} para hacer 4 td de 1 al 4 -->
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td colspan="2">3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table> 
+</body>
+</html>

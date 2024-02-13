@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <header>
+        <h1> formularios</h1>
+    </header>
+    <main>
+        <hr>
+        <!-- etiqueta form la base para los formularios todo lo que este 
+        adentro podra ser enviado (para que envie datos) un size?-->
+        <form>
+            <!-- etiqueta label tipo un supermercado che tiene su etiqueta literalmente
+            for es el atributo referente al id del input -->
+            <label for="nombres">nombres y apellidos</label>
+            <!-- lo input sirve para que el usuario ingrese la informacion -->
+            <!-- todo input va a tener un value cioe va a aver un back sera el valor--->
+            <!-- <input type="text" value="patata" -->
+            <!-- <input= type="number" value="6"  -->
+            <input type="text" id="nombres" placeholder="ej.Juan Perez" required minlength="2" maxlength="10">
+            <!-- atributo placeholder seria un ejemplo para dar indicaziones -->
+            <!-- si le ponemos el atributo required sera un campo obligatorio de rellenar sino no enviara -->
+            <!-- si le ponemos minlenght="2" estamos diciendo minomo dos caracteres -->
+            <!-- si le ponemos maxlenght="10" estamos diciendo maximo diez caracteres -->
+            <br/>
+            <!-- <br/> salta una linea tipo enter siguiente righa abajo -->
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" min="18" max="100">
+            <!-- min="18" sera el valor minimo mas bajo no aceptara -->
+            <!-- max="100" sera el valor maximo  -->
+            <br/>
+            <label for="correo">correo electronico</label>
+            <input type="correo" id="correo">
+            <br/>
+            <label for="password">password</label>
+            <input type="password" id="password">
+            <br/>
+            <label for="">estado civil</label>
+            <br/>
+            <!-- radio se vera el circulo  -->
+            <!-- en este caso cada input va a tener un atributo di tipo 
+            name="" para asi poder seleczionar un sola opcion para asi poder elegir-->
+            <!-- ahora tenemos que darle un valor porque todo input deberia tener un valor 
+            osea un back un valor a cada input -->
+            <input type="radio" id="casado" name="estado civil" 
+            value="casado">
+            <label for="casado">casado/a</label>
+            <br/>
+            <input type="radio" id="conviviente" name="estado civil" 
+            value="conviviente">
+            <label for="conviviente">conviviente</label>
+            <br/>
+            <input type="radio" id="soltero" name="estado civil" 
+            value="soltero">
+            <label for="soltero">soltero/a</label>
+            <br/>
+            <!-- otro tipo de input -->
+            <label for="">Ciudad</label>
+            <select>
+                <!-- si queremos que el usuario no seleccione "selccione una opcion"
+                le ponemos selected disabled -->
+                <option selected disabled>Seleccione una opcion</option>
+                <option value="LIM">Lima</option>
+                <option value="ARE">Arequipa</option>
+                <option value="TRU">Trujillo</option>
+            </select>
+            <br/>
+            <!-- este input tiene la apariencia de un botton -->
+            <input type="submit" value="Enviar" >
+        </form>
+        <!-- si queremos aprofondizar los input podemos ir al sito--> 
+         <!-- aca podemos ver ejemplos de codigo hechos para tomar de ejemplo -->
+        <!-- https://htmlreference.io/  -->
+        <!-- https://www.w3schools.com/ --> 
+
+        <!-- si deceamos ver el <input> pattern attribute podemos ir al sito  -->
+    </main>
+</body>
+</html>
+
