@@ -8,53 +8,66 @@
 <body>
     <table border="1" style="width: 100%;">
         <tr>
-            <!-- td*4{$} para hacer 4 td de 1 al 4 -->
+            <!-- td*3{$} para hacer 4 td de 1 al 4 -->
             <td>1</td>
             <td>2</td>
             <td>3</td>
-            <td>4</td>
         </tr>
         <tr>
             <td>1</td>
             <td>2</td>
             <td>3</td>
-            <td>4</td>
         </tr>
     </table> 
     <br/>
+    <!--otro table  -->
+    <table border="1" style="width: 100%;">
+        <tr>
+            <p>colspan="2" ocupamos dos celdas la 1 y 3</p>
+            <td colspan="2" bgcolor="red">1</td>
+             <!-- attributo colspan ocupa dos espacios de la colunna -->
+            <!-- ocupamos la cantidad de celdas que deceamos -->
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td colspan="2" bgcolor="red">3</td>
+        </tr>
+    </table> 
        <!--otro table  -->
        <table border="1" style="width: 100%;">
         <tr>
-            <!-- td*4{$} para hacer 4 td de 1 al 4 -->
-            <td>1</td>
-            <td rowspan="2">2</td>
+            <p>rowspan= "2" rowspan ocupa dos filas la 1 y 2 </p>
+            <td rowspan="2" bgcolor="yellow">1</td>
+            <td rowspan="2" bgcolor="yellow">2</td>
             <!-- rowspan ocupa dos filas -->
             <!-- ocupamos las cantidades de filas que deceamos -->
-            <td colspan="2">3</td>
-            <!-- attributo colspan ocupa dos espacios de la colunna -->
-            <!-- ocupamos la cantidad de celdas que deceamos -->
+            <td>3</td>
         </tr>
         <tr>
             <td>1</td>
             <td>2</td>
             <td>3</td>
-            <td>4</td>
         </tr>
     </table> 
     <br/>
     <!-- otro table  -->
     <table border="1" style="width: 100%;">
         <tr>
-            <!-- td*4{$} para hacer 4 td de 1 al 4 -->
-            <td rowspan="2">1</td>
+            <p>rowspan="2" en la 1  colspan="2" en la 3</p>
+            <p>filas y celdas deceadas</p>
+            <td rowspan="2" bgcolor="yellow">1</td>
             <td>2</td>
-            <td colspan="2">3</td>
+            <td colspan="2" bgcolor="red">3</td>
         </tr>
         <tr>
             <td>1</td>
             <td>2</td>
             <td>3</td>
         </tr>
-    </table> 
+    </table>
+    <!-- si escrivimos texto dentro de una celda todo el contenido se adatta a la celda -->
 </body>
 </html>

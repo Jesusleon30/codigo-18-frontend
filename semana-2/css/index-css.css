@@ -1,0 +1,56 @@
+h3 {
+    /* ancho de letra https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+    font-weight: bold;
+    /* color  */
+    color: green;
+}
+
+/* es este caso atrapamos todo lo que esta dentro de el etiqueta h4 */
+h4{
+    font-weight: bold;
+    color: brown;
+}
+
+/* aca atrapamos el elemento dentro h4 con su class
+para referenciar esto necesitamos del punto al inicio 
+.maiuscula */
+.maiuscula {
+    font-weight: bold;
+    color:pink;
+}
+
+/* aca atrapamos el elemento por id 
+para referenciar esto necesitamos del almuadilla # al inicio 
+#tituloh4*/
+#tituloh4{
+    color: orange;
+}
+
+
+/* aca atrapamos los elementos en relacion de sus atributos */
+/* va defrente el nombre del atributo */
+/* si en caso le quitamos el href ad a no le aplicaria el color  */
+a {
+    color: violet;
+}
+
+/* desde su  atributo  */
+[href] {
+    color: blue;
+}
+
+/* especificando el atributo */
+[href="https://www.youtube.com/"] {
+    color: red;
+}
+
+/* atributo input */
+
+input[disabled]{
+    background-color: aqua;
+}
+
+
+
+
+

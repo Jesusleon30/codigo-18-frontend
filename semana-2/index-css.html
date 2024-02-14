@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+
+    <!-- la primera manera de agregar css en hmtl es poniendo style dentro el head-->
+    <style>
+        /* primero es atrapar al elemento en base al nombre  dentro de la llaves{} */
+        /* se declara las reglas de css */
+        h1{
+            color: red;
+        }
+    </style>
+
+    <!-- otra manera de crear css es en su archivo de css-->
+    <!-- lo hacemos dentro el head con link -->
+    <link rel="stylesheet" href="./css/index-css.css">
+
+
+</head>
+
+<body>
+    <h1>
+        Titulo 1 para CSS
+    </h1>
+    <p>MANERA 1 css dentro head de html </p>
+
+    <!-- otra manera  de agregar css es dentro de la etiqueta directamente -->
+    <h2 style="color: blue;"> titulo 2 para css</h2>
+    <p>MANERA 2 css dentro dentro la etiqueta directamente de html </p>
+
+    <h3>titulo 3 -  la mas adecuada para usarla en codigo</h3>
+    <p>MANERA 3 es de crear css es en su proprio documento de css esterna </p>
+    <p>asi separamos y trabajamos de forma ordenada en html y css</p>
+
+    <!-- desde aca abajo vamos -->
+    <!-- atrapar el elemento desde su etiqueta en (./css/main.css) -->
+    <h4>atrapar el elemento desde su etiqueta en (./css/main.css)</h4>
+
+    <h4>h4 minuscula</h4>
+    <h4>h4 default</h4>
+    <!-- si yo quiero atrapar solo h4 pero el de la mauiscula -->
+    <!-- en este caso le creamos una class="le ponemos un nombre" interno-->
+    <!-- va hacer la referencia  -->
+    <h4 class="maiuscula">H4 class </h4>
+    <p>en este caso le creamos una es. class="maiuscula" y este se puede usar varias veces</p>
+  
+
+    <h4 id="tituloh4"> h4 ID </h4>
+    <p>el elemento id se puede usar solo uno por documento</p>
+
+    <h5> selectores desde su atributos
+     atrapamos los elementos en relacion a sus atributos</h5>
+
+    <!-- si en caso le quitamos el href ad a no le aplicaria el color   -->
+    <a>google</a>
+    <br/>
+
+    <a href="https://www.google.it/">google.it</a>
+    <a href="https://www.youtube.com/">youtube.com</a>
+    <a href="https://www.amazon.it/">amazon.it</a>
+
+
+    <!-- ahora veremos los input para css -->
+    <h5> ahora veremos los input para css desde su atributo </h5>
+
+    <input type="text" disabled>
+    <input type="text">
+
+</body>
+</html>
