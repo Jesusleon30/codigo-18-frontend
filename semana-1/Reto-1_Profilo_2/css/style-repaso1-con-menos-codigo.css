@@ -1,0 +1,169 @@
+/* css reto1 profilo_2-repaso */
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:darkslateblue;
+    color: white;
+
+}
+
+/* creo una class che se repite varias veces asi lo borro en css y lo meto en html */
+
+.align-center {
+    align-items: center;
+}
+
+
+
+nav{
+    /* border: solid; */
+    display: flex;
+    /* pone todo en fila  */
+
+    /* flex-direction: column; */
+    /*  ser pone como estava antes*/
+
+    justify-content: space-between;
+    /* separa cada elemento con un ancho igual (width)
+    de extremo a extremo */
+
+    /* align-items: center; */
+    /* hace la alineacion rispeto al contenido y no a los elementos
+    asi centra todo dentro el contenedor */
+
+    background-color: rgb(62, 28, 142);
+
+    /* margin en los 4 lados  */
+    /* margin-top:30px ;
+    margin-bottom:30px ;
+    margin-left:80px ;
+    margin-right:80px ; */
+
+    margin: 30px 80px;
+    /* y(30px) x(80px) */
+    padding:15px;
+    border-radius: 16px;
+
+
+}
+
+.nav-list{
+
+    /* border: solid red; */
+    display: flex;
+    /* pone todo en fila  */
+
+    list-style: none;
+    /* quitamos los puntos de la lista (ul) */
+    gap:10px;
+    /* permite de tener un espacio entre cada elemento che esta dentro del contenedor
+    pero solo funciona si esta flex */
+
+}
+
+.nav-list > li > a {
+    text-decoration: none;
+    /* quita la el sub rallado */
+    color:white;
+    /* color del texto */
+}
+
+/* al seleczionar o pasando per elemento a se activa color aquamarine */
+.nav-list > li > a:hover {
+    color:aquamarine
+}
+
+main { 
+    /* border: solid red; */
+    height: 50vh;
+    /* altura  */
+    display: flex;
+    justify-content: space-between;
+    /* separo de extremo a extremo */
+    padding: 30px;
+    align-items: center;
+    /* alineo verticalmente en centro */
+}
+
+.gretting {
+    /* border: solid; */
+    /* en aca le pusimos span en html para que el border
+     solo ocupe la escritura "saludos" */
+     background-color: rgb(42, 23, 87);
+     color:darkcyan;
+     padding: 10px;
+     border-radius: 16px;
+    
+}
+
+.title {
+    font-size: 52px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.description {
+    /* border: solid; */
+    font-size: 20px;
+    color:darkkhaki ;
+    font-weight:300 ;
+    /* spessore del texto va de 0  a 900 (peso) */
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap:20px;
+    /* align-items: center; */
+}
+
+.container-profile  > img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.container-contact {
+    /* border: solid; */
+    display: flex;
+    flex-direction: column;
+    /* se pone un elemento debajo de otro */
+    gap: 20px;
+    align-items: end;
+    /* aca tenemos colum percio se usara align-items: end; 
+    asi va todo a la derecha  */
+    
+    /* regola: quando se invierten las reglas de flex las propriedades tambien
+    se invierten  */
+
+}
+
+.container-contact > a {
+    /* border: solid; */
+    text-decoration: none;
+    
+}
+
+
+/* a:first-child agarro solo el primer hijo osea la primera a que tenga */
+.container-contact > a:first-child {
+    /* border: solid ; */
+    display: flex;
+    /* align-items: center; */
+    gap:5px;
+}
+
+/* a:last-child agarro la ultima a que tengo */
+.container-contact > a:last-child {
+    border: solid;
+    display: flex;
+    /* align-items: center; */
+    gap:5px;
+    padding: 5px;
+    border-radius: 16px;
+}
