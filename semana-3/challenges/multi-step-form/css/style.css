@@ -46,6 +46,7 @@
   
   .container-steps > ul {
     list-style: none;
+    /* quitamos los puntos */
     display: flex;
     gap: 30px;
   }
