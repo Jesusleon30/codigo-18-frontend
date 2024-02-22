@@ -1,0 +1,31 @@
+
+
+
+
+@font-face {
+    /* nombre de la fuente  */
+    font-family:  "ubuntu";
+
+    font-weight: 400;
+    /* spessore texto */
+
+
+    /* direczion  del archivo */
+    src: url("../assets/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+    font-family: "ubuntu";
+    font-weight: 500;
+    src: url("../assets/fonts/Ubuntu-Medium.ttf");
+}
+
+
+@font-face {
+    font-family: "ubuntu";
+    font-weight: 700;
+    src: url("../assets/fonts/Ubuntu-Bold.ttf");
+}
+
+
+

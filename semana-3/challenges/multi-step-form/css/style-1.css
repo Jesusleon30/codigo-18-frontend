@@ -1,0 +1,28 @@
+
+/* este css es para semana 3 multi-step-form */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: "ubuntu", system-ui, sans-serif;
+}
+
+  
+main {
+    height: 100vh;
+}
+  
+.container-1 {
+    height: 90vh;
+    overflow: auto;
+    background-color: aqua;
+}
+  
+.container-2 {
+    height: 10vh;
+    background-color: brown;
+}
