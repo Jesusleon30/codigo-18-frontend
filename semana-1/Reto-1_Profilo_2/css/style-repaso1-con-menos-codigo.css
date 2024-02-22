@@ -14,6 +14,7 @@ body {
 
 /* creo una class che se repite varias veces asi lo borro en css y lo meto en html */
 
+
 .align-center {
     align-items: center;
 }
@@ -78,7 +79,7 @@ nav{
     color:aquamarine
 }
 
-main { 
+main {
     /* border: solid red; */
     height: 50vh;
     /* altura  */
@@ -98,7 +99,7 @@ main {
      color:darkcyan;
      padding: 10px;
      border-radius: 16px;
-    
+
 }
 
 .title {
@@ -123,21 +124,23 @@ main {
 }
 
 .container-profile  > img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
 .container-contact {
     /* border: solid; */
     display: flex;
+    /* alinea de forma orizontale */
     flex-direction: column;
-    /* se pone un elemento debajo de otro */
+    /* se pone un elemento debajo de otro de forma vertical */
     gap: 20px;
+    /* espacio entre las column */
     align-items: end;
-    /* aca tenemos colum percio se usara align-items: end; 
+    /* aca tenemos colum percio se usara align-items: end;
     asi va todo a la derecha  */
-    
+
     /* regola: quando se invierten las reglas de flex las propriedades tambien
     se invierten  */
 
@@ -146,7 +149,8 @@ main {
 .container-contact > a {
     /* border: solid; */
     text-decoration: none;
-    
+    /* quitamos el sub-rallado */
+
 }
 
 
@@ -166,4 +170,170 @@ main {
     gap:5px;
     padding: 5px;
     border-radius: 16px;
+}
+
+
+
+/* aca le metemos una hr en html con class="divider"
+osea una linea creada  */
+.divider{
+    /* color de la linea con espesor 0.5 px  */
+    border: solid 0.5px gold;
+
+}
+
+
+.container-about-me {
+    /* este container -about-me contiene dos div
+    usando display flex alineo los dos div de forma orizontal  */
+    /* border: solid red; */
+    display: flex;
+    padding: 30px 80px;
+    /* espacio entre los dos div  */
+    justify-content: space-between;
+    /* divide los dos div de extremo a extreno  en espacio iguales*/
+
+}
+
+.container-about-me > div > img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.container-about-me > div > h2 {
+    font-size: 48px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.mt-20 {
+    margin-bottom: 20px;
+}
+
+
+.container-cards > div:nth-child(2) {
+    background-color: rgb(32, 22, 78);
+    border: none;
+  }
+
+
+.container-about-me > div > p {
+    color: aquamarine;
+}
+
+.container-cards{
+    /* border: solid red; */
+    display: flex;
+    /* alinea orizontal */
+    justify-content: center;
+    /* poner en el centro */
+    gap: 70px;
+    /* espacio entre los elementos  */
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+}
+
+.container-cards > div {
+    border: solid blue;
+    border-radius: 16px;
+    /* vemos el border de cada  div  */
+    /* text-align: center; */
+    /* centramos cada texto en el centro en cada div
+    pero como vamos a poner align-items: center en este caso no es necesario */
+    width: 246px;
+    height: 200px;
+
+    /* primero creamos la colunna */
+    flex-direction: column;
+    /* justify-content: center; */
+
+    /* aca para usar las otras propriedades de alig... justy....
+    tenemos que usar por fuerza flex */
+    display: flex;
+
+    /* segundo los alinbeamos al centro */
+    align-items: center;
+    /* aca tenemos colum percio se usara align-items: center ;
+    asi va todo al centro  */
+
+    /* tercero lo centramos al centro del border del div */
+    justify-content: center;
+
+}
+
+.container-cards > div > p {
+    font-weight: 600;
+    /* spessore de la letra  */
+    margin-top: 10px;
+
+}
+
+.container-cards > div > h5 {
+    font-size: 32px;
+    /* grandezza de las letras */
+
+}
+
+.container-summary {
+    /* border: solid  red; */
+    display: flex;
+    /* ponemos de forma orizontal */
+    justify-content: center;
+    /* centramos el elemento en base al ancho*/
+    gap: 70px;
+    /* espacio entre elementos */
+    background-color: rgb(32,22 ,78);
+    /* ponemos uno sfondo  */
+  
+
+    /* width: 878px; */
+    /* ancho dello sfondo */
+    /* es un calculo de 246 div mas 70 gap son 3 en total asi sale 878 */
+
+    width: 858px;
+    /* seria 878 total de pixel - 20px de padding viene 858px */
+
+   
+    margin: auto;
+    /* centramos lo sfondo de forma automatica */
+
+    padding: 20px;
+    /* padding es un espacio desde adentro hacia afuera */
+    /* si uso el padding de 20px tendria che quitarle al width de 878px seria a 858px */
+
+    margin-bottom: 60px;
+    /* espacio hacia abajo */
+
+    border-radius: 16px;
+    color:blueviolet
+
+}
+
+
+/* primer hijo p del div p:first-child */
+.container-summary > div > p:first-child {
+    font-weight: 100;
+    /* spessore letra */
+    color:chartreuse
+}
+
+/* segundo hijo p del div p:last-child */
+.container-summary > div > p:last-child {
+    font-weight: bold;
+    font-size: 32px;
+
+
+}
+
+
+.container-summary > div {
+    /* border: solid yellow; */
+    width: 246px;
+    /* le ponemos un ancho del div  */
+    text-align: center;
+    /* centramos el texto dentro el div */
 }

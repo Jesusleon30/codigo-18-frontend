@@ -50,7 +50,7 @@ nav{
 
     /* border: solid red; */
     display: flex;
-    /* pone todo en fila  */
+    /* pone todo en fila orizontale  */
 
     list-style: none;
     /* quitamos los puntos de la lista (ul) */
@@ -117,17 +117,21 @@ main {
 }
 
 .container-profile  > img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
 .container-contact {
     /* border: solid; */
     display: flex;
+    /* alinea los elemnetos de forma orizontal lo vamos a complementar con colum asi se 
+    pone uno debajo de otro el la siguiente linea de codigo */
     flex-direction: column;
-    /* se pone un elemento debajo de otro */
+    /* se pone un elemento debajo de otro de forma vertical */
     gap: 20px;
+    /* espacio entre elementos en este caso da espacio entre los elementos 
+    de las colunnas */
     align-items: end;
     /* aca tenemos colum percio se usara align-items: end; 
     asi va todo a la derecha  */
@@ -144,7 +148,8 @@ main {
 }
 
 
-/* a:first-child agarro solo el primer hijo osea la primera a que tenga */
+/* dentro el div tenemos solo dos elementos a asi que tenemos dos hijos (a)
+ a:first-child agarro solo el primer hijo osea la primera "a" que tenga */
 .container-contact > a:first-child {
     /* border: solid ; */
     display: flex;
