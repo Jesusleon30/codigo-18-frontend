@@ -10,15 +10,25 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+
+
+    <!-- <link rel="stylesheet" href="./css/style-repaso.css" /> -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+
   </head>
   <body>
     <main>
       <img src="./images/logo.svg" alt="" />
+      <!-- form hace formularios -->
       <form>
         <div>
           <div>
+            <!-- struttura: van acompagnados el label es el texto que tiene el input  -->
             <label for="input-bill" class="text-title">Bill</label>
+            <!-- for es para indicar el label a quien pertenece 
+            y lo puedo hacer con el id es. id='input-bill' -->
             <div class="container-input">
               <img src="./images/icon-dollar.svg" alt="" />
               <input id="input-bill" type="text" placeholder="0" />
@@ -27,22 +37,29 @@
           <div>
             <p class="text-title">Select Tip %</p>
             <div class="container-percentage">
+              <!-- creamos 5 botones mmas un input -->
               <button>5%</button>
               <button>10%</button>
               <button>15%</button>
               <button>25%</button>
               <button>50%</button>
-              <input type="text" placeholder="Custom" />
+              <input type="text" placeholder="Custom"/>
             </div>
           </div>
           <div>
+
+            <!-- un label para un input -->
             <label for="input-people" class="text-title"
-              >Number of people</label
-            >
+              >Number of people</label>
+              <!-- en un input no se puede poner una imagen entonces le 
+              creamos un div y lo ponemos adentro creando una img + input -->
+
             <div class="container-input">
+              <!-- dentro de este div le ponemos una img + input  -->
               <img src="./images/icon-person.svg" alt="" />
               <input id="input-people" type="text" placeholder="0" />
             </div>
+
           </div>
         </div>
         <div>
@@ -51,6 +68,7 @@
               <div>
                 <p>Tip Amount</p>
                 <span>/ person</span>
+                <!-- si trasforma en inline:  seria un border su se stesso  -->
               </div>
               <div>
                 <p>$ 0.00</p>
