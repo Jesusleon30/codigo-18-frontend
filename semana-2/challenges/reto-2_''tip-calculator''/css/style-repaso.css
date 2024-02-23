@@ -1,0 +1,190 @@
+/* style-repaso tip-calculator */
+
+* {
+  /* estas propriedades son fijas en todo css  */
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  /* es para que el border sea interno y no externo
+    asi eliminamos el scroll osea el coso para ir arriva y abajo en la pantalla */
+  }
+
+body {
+  /* en el body la propriedad flex no lo hace funcionar al 100%
+    asi que lo vamos a poner en el main */
+
+  font-family: "Space Mono", monospace;
+  /* tipo de carattere */
+  font-weight: bold;
+  /* spessore texto */
+  background-color: rgb(162, 220, 220);
+}
+
+/*  ponemos a los input y tambien a los button che usen la misma
+fuente de scrittura y spessore */
+input, button {
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+}
+
+main {
+  /* si como tenemos una sola section y no mas en este caso es posible tener un flex
+    xk no afecta en nada */
+  display: flex;
+  /* border: solid red; */
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  /* 100vh es la altura de una pantalla completa */
+  align-items: center;
+  /* centramos el elemento */
+  gap: 50px;
+  /* espacio seria entre la imagen y el otro form */
+}
+
+form {
+  /* border: solid; */
+  display: flex;
+  background-color: ghostwhite;
+  padding: 40px;
+  border-radius: 16px;
+  gap: 30px;
+  width: 800px;
+
+}
+
+form > div {
+  flex: 1;
+    /* aca queremos che cada div ocupe el mismo ancho
+    che sea uno a uno */
+
+  /*oppure se puede usar un widht:50%  */
+  /* width: 50%; */
+
+  }
+
+
+
+.container-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: solid; */
+  padding: 10px;
+  border-radius: 8px;
+  background-color:azure;
+}
+
+
+
+.container-input > input {
+  border: none;
+  /* eliminamos el border con none */
+  outline: none;
+  /* le eliminamos la evidenzia al hacer ser click
+  tipo un border se ve el input  */
+  text-align: right;
+  /* alineamos el texto a la derecha */
+  padding: 5px;
+  background-color:transparent;
+}
+
+.text-title {
+  font-size: 14px;
+  color:darkgrey;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  /* en este caso el elemento label es un inline pero
+  para que funcione el margin top debemos hacerlo diventar
+  un block asi que lo convertimos */
+
+  /* ojo: con los elementos inline los margin top e bottom no funcionan  */
+
+}
+
+.container-percentage {
+  /* border: solid; */
+  display: flex;
+
+  flex-wrap: wrap;
+  /* flex wrap va a permitir que se respete el porcentaje de cada elemento
+  en este caso le pusimos 33.3% */
+  gap: 4.9px;
+}
+
+
+/* " * " lo ponemos xk asi coje todo no solo los buttom ma aunque el input  */
+.container-percentage > * {
+  width: 30%;
+  /* ancho en percentual de cada buttom */
+  margin-bottom: 4.9%;
+}
+
+.container-percentage > button{
+  background-color:darkslategray;
+  color: beige;
+  border:none;
+  /* eliminamos el border con none */
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 6px;
+
+  cursor: pointer;
+  /* cada vez que entre el mouse va aparecer una mano para que se haga un click */
+}
+
+
+
+.container-dx{
+  /* border: solid; */
+  background-color:darkslategray;
+  color:darkcyan;
+  border-radius: 20px;
+  display: flex;
+  justify-content:center;
+  
+
+
+}
+ .texto-2{
+  /* border: solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+  height: 50px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 10px;
+  
+  
+ }
+
+p{
+  color: white;
+  font-size: 14px;
+}
+
+.numero{
+  color: darkcyan;
+  font-size: 35px;
+}
+
+.reset{
+  /* border: solid; */
+  background-color:lightseagreen;
+  color: rgb(74, 95, 133);
+  width: 270px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-top: 65px;
+
+}
+
+
+
+
+

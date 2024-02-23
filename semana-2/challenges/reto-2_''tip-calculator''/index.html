@@ -12,17 +12,17 @@
     />
 
 
-    <!-- <link rel="stylesheet" href="./css/style-repaso.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-repaso.css">
 
 
   </head>
   <body>
     <main>
       <img src="./images/logo.svg" alt="" />
-      <!-- form hace formularios -->
       <form>
+        <!-- form hace formularios -->
         <div>
           <div>
             <!-- struttura: van acompagnados el label es el texto que tiene el input  -->
@@ -37,53 +37,52 @@
           <div>
             <p class="text-title">Select Tip %</p>
             <div class="container-percentage">
-              <!-- creamos 5 botones mmas un input -->
+                <!-- creamos 5 botones mmas un input -->
               <button>5%</button>
               <button>10%</button>
               <button>15%</button>
               <button>25%</button>
               <button>50%</button>
-              <input type="text" placeholder="Custom"/>
+              <input type="text" placeholder="Custom" />
+              <!-- placeholder vuoldire un esempio per cosi
+                 poter dare un esmepio di cosa  si dovrebbe scrivere -->
             </div>
           </div>
           <div>
-
-            <!-- un label para un input -->
             <label for="input-people" class="text-title"
-              >Number of people</label>
-              <!-- en un input no se puede poner una imagen entonces le 
+              >Number of people</label
+            >
+            <!-- en un input no se puede poner una imagen entonces le 
               creamos un div y lo ponemos adentro creando una img + input -->
-
             <div class="container-input">
-              <!-- dentro de este div le ponemos una img + input  -->
+                <!-- dentro de este div le ponemos una img + input  -->
               <img src="./images/icon-person.svg" alt="" />
               <input id="input-people" type="text" placeholder="0" />
             </div>
-
           </div>
         </div>
-        <div>
+        <div class="container-dx">
           <div>
-            <div>
+            <div class="texto-2">
               <div>
                 <p>Tip Amount</p>
                 <span>/ person</span>
-                <!-- si trasforma en inline:  seria un border su se stesso  -->
+                <!-- span trasforma en inline:  seria un border su se stesso  -->
               </div>
               <div>
-                <p>$ 0.00</p>
+                <p class="numero">$4.27</p>
               </div>
             </div>
-            <div>
+            <div class="texto-2">
               <div>
                 <p>Total</p>
                 <span>/ person</span>
               </div>
               <div>
-                <p>$ 0.00</p>
+                <p class="numero">$32.79</p>
               </div>
             </div>
-            <button>Reset</button>
+            <button class="reset">Reset</button>
           </div>
         </div>
       </form>

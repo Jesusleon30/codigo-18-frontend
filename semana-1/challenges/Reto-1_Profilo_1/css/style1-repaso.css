@@ -1,6 +1,8 @@
 
-/* por defecto un navegador tiene gia un espacio predefinito
+/* por defecto un navegador tiene gia un espacio predefinito creando uno scroll
 lo que hacemos es sacarlo con " * "  el per significa todo */
+
+/*  --- global * (todo) reset  ---  */
 *{
     margin: 0;
     /* margin es el margen que hay entre elementos esterior */
@@ -27,10 +29,10 @@ body {
 
 main{
     height: 100vh;
-    /* altura en forma vertical */
+    /* altura en forma vertical de una pantalla entera */
 
     display: flex; 
-    /* al displa:flex me permite activar mas propriedades como para centrar ec... */
+    /* al displa:flex me permite activar mas propriedades como para centrar ecc... */
     align-items: center;
     /* centra de forma vertical */
     justify-content: center;
@@ -90,7 +92,8 @@ ul{
 }
 
 
-/* se io vado sul elemento l'indicatore del mouse cambiera da freccia a mano sarebbe un dettaglio */
+/* se io vado sul elemento l'indicatore del mouse cambiera da freccia a mano sarebbe
+ un dettaglio */
 ul > li > a {
     text-decoration: none;
     /* esto le quita el sup-rallado de las letras (toglie il sottolineato)*/
@@ -99,7 +102,7 @@ ul > li > a {
     margin-top: 20px;
     /* entre cada li tenga un margen hacia arriva unos 20px */
     background-color: rgb(21, 19, 19);
-    /* colore a lo sfondo di oogni li  */
+    /* colore a lo sfondo di ogni li  */
     padding: 15px;
     /* spazio dentro li im modo che lo sfondo insieme alla lettere abbiano spazio tra di loro */
     border-radius: 18px;
