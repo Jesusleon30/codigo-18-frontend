@@ -1,0 +1,149 @@
+
+/* variables */
+/* raiz de la sintassi */
+:root{
+    --bg-1: #265073;
+    --bg-2: #2D9596;
+    --bg-3: #9AD0C2;
+    --bg-4: #F1FADA;
+}
+
+
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    /* calcula los pixeles metidos en automatico */
+    
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr;
+
+    grid-template-areas:
+    "side header"
+    "side main";
+
+}
+
+.header{
+    background-color: var(--bg-1);
+    /* llamo la variabile  var(--bg-1) */
+    grid-area: header;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:16px;
+    /* espacio interno */
+
+
+
+}
+.sidebar{
+    background-color: var(--bg-2);
+    grid-area: side;
+}
+
+.main{
+    background-color: var(--bg-3);
+    grid-area: main;
+
+    /*me  crea una griglia con filas y colunnas */
+    display: grid;
+
+    /* crear colunnas */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* crear filas  */
+    grid-template-rows: 1fr 1fr 1fr;
+
+
+    /* tenemos que disabilar las areas xk sino crea conflitto con @media query
+    cuando achicamos la pantalla */
+    grid-template-areas: 
+    "c1 c2 c3"
+    "c4 c4 c5"
+    "c4 c4 c6";
+
+
+    padding: 24px;
+    /* espacio interno */
+    gap:20px;
+    /* espacio entre las cajas */
+
+}
+
+.card{
+    background-color: var(--bg-4);
+    display: flex;
+    justify-content: center;
+    /* eje principal */
+    align-items: center;
+    /* eje segundario  */
+    border-radius: 16px;
+
+
+
+}
+
+/* nth-child(1) elijo el hijo 1 */
+.card:nth-child(1) {
+    grid-area: c1;
+}
+
+.card:nth-child(2) {
+    grid-area: c2;
+}
+
+.card:nth-child(3) {
+    grid-area: c3;
+}
+
+.card:nth-child(4) {
+    grid-area: c4;
+}
+
+.card:nth-child(5) {
+    grid-area: c5;
+}
+
+.card:nth-child(6) {
+    grid-area: c6;
+}
+
+
+@media (max-width: 768px){
+    body{
+        grid-template-columns: 80px 1fr;
+    }
+
+    .main {
+        /*  */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (6,200px);
+
+        grid-template-areas:initial;
+        /* tenemos que disabilitar las areas asi no crean conflicto al reducir la pantalla */
+        /* initial lo disabilita   */
+    }
+
+    .card {
+        /* tenemos que disabilitar las areas asi no crean conflicto al reducir la pantalla */
+        /* initial lo disabilita   */
+        grid-area:initial !important;
+
+        /* !important significa mayor importancia le da prevalencia a esas propriedades */
+    }
+
+
+
+
+
+
+
+
+}

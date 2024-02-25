@@ -34,9 +34,14 @@ body{
 
 }
 
+
+
+/* creada una class que se repetia */
 .text-center{
     text-align: center;
 }
+
+
 
 
 /* creada una class que se repetia */
@@ -104,6 +109,13 @@ xk estamos en mobile y no en desktop*/
 }
 
 
+/* creada una class que se repetia */
+.text-xl{
+    font-size: 38px !important;
+}
+
+
+
 
 /* --- eliminamos al main background-repeat: no-repeat - background-position: center-
 background-size: cover xk son classes que se repiten---  */
@@ -159,7 +171,7 @@ h1 {
 /* --- eliminamos background-repeat: no-repeat - background-position: center-
 background-size: cover xk son classes que se repiten---  */
 
-/* --- eliminamos tambien height: 50vh; xk se repite  */
+/* ---eliminamos el height: 50vh; xk gia tiene su class y se repite --- */
 
 .bg-egg{ /* class para la imagen del huevo */
     background: url(../assets/mobile/image-transform.jpg);
@@ -176,7 +188,7 @@ background-size: cover xk son classes que se repiten---  */
 
 
 /* ---eliminamos el display:flex xk gia tiene su class y se repite --- */
-/* --- eliminamos tambien height: 50vh; xk se repite  */
+/* ---eliminamos el height: 50vh; xk gia tiene su class y se repite --- */
 
 .container-egg {
     /* border: solid; */
@@ -188,10 +200,16 @@ background-size: cover xk son classes que se repiten---  */
 }
 
 
+
+
+
+/* ---eliminamos el font-size: 38px; xk gia tiene su class y se repite --- */
 .container-egg > div > h2 {
-    font-size: 38px;
     margin-bottom: 15px;
 }
+
+
+
 
 
 .container-egg > div > p {
@@ -238,6 +256,38 @@ background-size: cover xk son classes que se repiten---  */
 }
 
 
+.bg-cherry{
+    background: url(../assets/mobile/image-graphic-design.jpg);
+    height: 80vh;
+    align-items: end;
+    /* align-items: flex-end; */
+    /* align-items: end;   oppure  align-items: flex-end; son lo mismo
+    end = abajo  */
+}
+
+
+.bg-cherry > div {
+    /* border: solid; */
+    margin-bottom: 80px;
+    color: darkcyan;
+}
+
+.bg-cherry > div > h2 {
+    /* border: solid; */
+    margin-bottom: 20px;
+}
+
+
+.img-orange {
+    position: absolute;
+}
+
+
+
+
+
+
+
 
 
 
@@ -275,3 +325,4 @@ pero queriendo podemos cambiar con otras dimensiones */
         color:brown;
     }
 }
+

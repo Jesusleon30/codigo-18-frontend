@@ -1,0 +1,114 @@
+/* css para reto1_Profilo-card */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color:rgb(51, 128, 186);
+}
+
+main {
+    /* border: solid red; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header{
+    /* border: solid red; */
+    width: 350px;
+    height: 60vh;
+    border-radius: 20px;
+    background-color: white;
+}
+
+
+
+header > div {
+    /* border: solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+.sfondo{
+    /* border: solid; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+}
+
+
+.foto{
+
+    border-radius: 50%;
+    margin-top: -20px;
+    position: absolute;
+}
+
+
+
+
+h1{
+    /* border: solid; */
+    font-size: 25px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+
+
+.edad {
+    /* border: solid; */
+    font-size: 23px;
+    color: darkgrey;
+    font-weight: 200;
+}
+
+
+h2{
+    /* border: solid; */
+    font-size: 20px;
+    color: darkgray;
+    font-weight: 100; 
+    
+}
+
+hr{
+    display: flex;
+    margin-top: 30px;
+}
+
+
+p {
+    font-size: 12px;
+    color:darkgray ;
+    letter-spacing: 2px;
+}
+
+
+.informacion {
+    /* border: solid red; */
+    display: flex;
+    justify-content:space-evenly;
+    /* separa cada elemento con un ancho igual (width)
+    de extremo a extremo */
+    margin-top: 30px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+
+
