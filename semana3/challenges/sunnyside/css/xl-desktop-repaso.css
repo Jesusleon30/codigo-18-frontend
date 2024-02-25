@@ -1,0 +1,200 @@
+/* xl - desktop-repaso  */
+
+
+
+/* xl */
+@media (min-width: 1280px) {
+
+    /* imagen de la naranja en desktop mas <li> */
+
+    /* --- eliminamos al main background-repeat: no-repeat - background-position: center-
+    background-size: cover xk son classes que se repiten---  */
+    main{
+        /* para que el main tenga la foto de la naranja se mete un url al background */
+        /* la url va apuntar al archivo que tengo localmente  */
+        background: url(../assets/desktop/image-header.jpg);
+    }
+
+
+      /* en este caso en modo responsive no queremos
+       el buttom que aparesca quando esta en desktop (img hamburguesa)
+       pero si la lista ul */
+    .btn-menu {
+        /* border: solid red; */
+        /* background-color: transparent;
+        /* siendo un buttom non va el color de lo sfondo percio lo metemos trasparente */
+        /* border: none; */
+        /* eliminamos el border con none */
+        /* cursor: pointer;
+        cursore in manina */
+
+        /* le pondremos: */
+        display: none;
+        /* eliminamos con none el display */
+
+    }
+
+
+    /* --- aca tenemos un flex que se repite pero como esta en 
+    modo responsive no lo vamos a tocar */
+    .menu{
+        font-family: "barlow";
+        display: flex;
+        gap: 25px;
+        list-style: none;
+        /* eliminamos los puntos */
+        align-items: center;
+        /* centramos  */
+    }
+
+    .menu > li > a {
+        text-decoration: none;
+        /* eliminamos el sub-rallado */
+        color: white;
+    }
+
+
+
+
+    /* aca estamos diciendole que tiene que modificar solo al ultimo li (contact) */
+    .menu > li:last-child {
+        background-color: beige;
+        border-radius: 24px;
+        padding: 10px 20px;
+    }
+
+    .menu > li:last-child > a {
+        color:black;
+        font-family: "fraunces";
+        text-transform: uppercase;
+        /* texto en maiuscula */
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+
+
+
+    .section-egg {
+        display: flex;
+    }
+
+
+
+    /* ojo: como tenemos que repetir codigo vamos hacer unas class apartes  */
+    /* lo hemos sacado de .section-egg */
+    .flex-reverse{
+        flex-direction: row-reverse;
+        /* invierte todo lo de derecha va a la izquierda (scambiano uno al posto del altro)  */
+
+    }
+
+
+
+
+
+
+
+    /* con esto lo hacemos aparecer en el desktop  */
+    /* seria la escritura con imagen del huevo de lado */
+
+
+    /* --- eliminamos background-repeat: no-repeat - background-position: center-
+    background-size: cover xk son classes que se repiten---  */
+    .bg-egg{
+        /* border: solid red 5px; */
+        /* si le ponemos un border lo vemos ahy pero como no tiene un width (un ancho) sale vacio */
+        width: 50%;
+        /* ahora que le hemos dado un ancho vemos que aparece la imagen del huevo */
+        flex: 1;
+
+        background: url(../assets/desktop/image-transform.jpg);
+
+        height: 70vh !important; 
+    } 
+
+
+
+
+
+
+
+    .container-egg {
+        /* border: solid; */
+        /* haciendo un border vemos cuanto ocupa cada elemento pero en este caso veo que 
+        no ocupa lo mismo */
+
+        /* le pondremos esto asi ocupa el mismo espacio cada uno  */
+        /* le ponemos al .bg-egg che vale un flex:1 y al huevo que tambien mide igual con un flex:1   */
+        flex:1;
+        height: 70vh !important;
+        padding: 0;
+        /*le quito el padding asi ocupa todo el elemento */
+    }
+
+    .container-egg > div {
+        /* border: solid; */
+        display: block;
+        margin: auto;   
+         /* lo centra de forma orizontal teniendo block   */
+         width: 70%;
+    }
+
+    .container-egg > div > * {
+        text-align: left;
+    }
+
+
+
+
+
+
+
+    /* --- eliminamos background-repeat: no-repeat - background-position: center-
+    background-size: cover xk son classes que se repiten---  */
+
+     /* con esto lo hacemos aparecer en el desktop  */
+    /* seria imagen de la copa  con la la escritura de lado */
+
+    .bg-cup{
+        /* border: solid red 5px; */
+        /* si le ponemos un border lo vemos ahy pero como no tiene un width (un ancho) sale vacio */
+        width: 50%;
+        /* ahora que le hemos dado un ancho vemos que aparece la imagen del huevo */
+        flex: 1;
+
+        background: url(../assets/desktop/image-stand-out.jpg);
+        height: 70vh !important; 
+    } 
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

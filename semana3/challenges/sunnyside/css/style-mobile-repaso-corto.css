@@ -1,0 +1,277 @@
+
+/* mobile- repaso - corto xk le vamos a kitar las repetidas y vamos a crear
+classes  aparte y vamos a ponerlo en html pero tenemos que estar atentos
+ xk tenemos condicionales por el modo desktop */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: fraunces, sans-serif;
+    /* tipo de caracter */
+}
+
+
+
+
+
+/* creada una class que se repetia */
+.flex{
+    display: flex;
+}
+
+
+
+/* class de los parrafos */
+.font-barlow{
+    font-family:"barlow", sans-serif;
+    font-weight: 600;
+    /* spessore delle lettere */
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/* creada una class que se repetia */
+.bg-no-repeat{
+/*  ahora si nos fijamos aca quando estiramos la pantalla orizontalmente la
+    imagen se va multiplica , triplicarse ecc... hasta conseguir llenar el fondo*/
+    background-repeat: no-repeat !important;
+    /* aca le ponemos esto asi no repite la imagen al estirar la pantalla */
+}
+
+
+
+/* creada una class que se repetia */
+.bg-positions-center{
+    background-position: center !important;
+    /* centramos la imagen  */
+}
+
+
+/* creada una class que se repetia */
+.bg-size-cover {
+    background-size: cover !important;
+    /* stilo mobile */
+}
+
+/* creada una class que se repetia */
+.h-50 {
+    height: 50vh !important;
+}
+
+
+
+/* ---eliminamos display:flex xk gia tiene su class y se repite--- */
+.nav {
+    /* border: solid red; */
+    background-color:deepskyblue;
+
+    /*  se posiciona de extremo a extremo */
+    justify-content: space-between;
+
+    /* justify-content: space-around; */
+    /* esto te lo centra pero con espacios al costado */
+    align-items: center;
+    padding:20px;
+}
+
+.btn-menu {
+    /* border: solid red; */
+    background-color: transparent;
+    /* siendo un buttom non va el color de lo sfondo percio lo metemos trasparente */
+    border: none;
+    /* eliminamos el border con none */
+    cursor: pointer;
+    /* cursore in manina */
+
+}
+
+
+/* en modo responsive no queremos la lista ul
+xk estamos en mobile y no en desktop*/
+.menu{
+    /* le pondremos: */
+    display: none;
+    /* eliminamos con none el display */
+}
+
+
+
+/* --- eliminamos al main background-repeat: no-repeat - background-position: center-
+background-size: cover xk son classes que se repiten---  */
+
+main{      /*  vamos a poner una imagen desde css */
+
+    /* para que el main tenga la foto de la naranja se mete un url al background */
+    /* la url va apuntar al archivo que tengo localmente  */
+    background: url(../assets/mobile/image-header.jpg);
+    /* poniendo asi la naranja no se va aver asi que le ponemos un height */
+
+    /* height:100vh ; */
+    /* con esto vemos un poco la naranja de ahy lo acomodamos */
+    height: 70vh;
+    /* lo ponemos de acuerdo al ejemplo  */
+}
+
+
+h1 {
+    color:white;
+    text-align: center;
+    text-transform:uppercase ;
+    /* trasforma las letras en maiucula */
+
+    /* text-transform: lowercase; */
+    /* trasforma en minuscula */
+
+    /* text-transform: capitalize; */
+    /* hace que las iniciales comiencen con maiusculas y poi minuscula */
+
+    font-size: 60px;
+    padding-top: 35px;
+
+}
+
+
+/* class de una imagen (la freccia) */
+.arrow-down{
+    /* border: solid; */
+    /* es de tipo inline */
+    display: block;
+    /* lo trasformamos en block  */
+    margin: auto;
+    /* activando el block podemos usar el margin auto
+    asi se adatta */
+    height: 160px;
+    margin-top: 35px;
+}
+
+
+
+
+/* --- eliminamos background-repeat: no-repeat - background-position: center-
+background-size: cover xk son classes que se repiten---  */
+
+/* --- eliminamos tambien height: 50vh; xk se repite  */
+
+.bg-egg{ /* class para la imagen del huevo */
+    background: url(../assets/mobile/image-transform.jpg);
+    /* poniendo asi la naranja no se va aver asi que le ponemos un height */
+
+    /* height:100vh ; */
+    /* con esto vemos un poco la naranja de ahy lo acomodamos */
+    /* height: 50vh; */
+    /* lo ponemos de acuerdo al ejemplo  */
+}
+
+
+
+
+
+/* ---eliminamos el display:flex xk gia tiene su class y se repite --- */
+/* --- eliminamos tambien height: 50vh; xk se repite  */
+
+.container-egg {
+    /* border: solid; */
+   flex-direction: column;
+   justify-content: center;
+   /* centra de forma vertical
+   estando el colunm invierto   */
+   padding: 16px;
+}
+
+
+.container-egg > div > h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+
+.container-egg > div > p {
+    font-size: 18px;
+    line-height: 1.5;
+    /* para que vea un poco mas separado entre los textos */
+    color:darkgrey;
+}
+
+.link {
+    text-transform: uppercase;
+    /* tradformo in maiuscula */
+    font-weight: bold;
+    /* si como es un inline el margin no funciona allora lo trasformamos en block */
+    /* para verificar si es inline hacemos un border */
+
+    /* border: solid; */
+
+    /* inline ocupa solo el espacio del elemento  */
+    /* block ocupa todo un bloke */
+
+    display: block;
+    margin-top: 20px;
+    color:black;
+    text-decoration: none;
+    /* eliminamos el sub-rallado */
+}
+
+
+
+
+
+/* --- eliminamos background-repeat: no-repeat - background-position: center-
+background-size: cover xk son classes que se repiten---  */
+
+.bg-cup{ /* class para la imagen de la copa */
+    background: url(../assets/mobile/image-stand-out.jpg);
+    /* poniendo asi la naranja no se va aver asi que le ponemos un height */
+
+    /* height:100vh ; */
+    /* con esto vemos un poco la naranja de ahy lo acomodamos */
+    /* height: 50vh; */
+    /* lo ponemos de acuerdo al ejemplo  */
+}
+
+
+
+
+
+
+
+/* media query son estos de los quales son standar
+pero queriendo podemos cambiar con otras dimensiones */
+
+/* sm */
+@media (min-width: 640px) {
+    h1{
+        color:red;
+    }
+    /* aca le estamos diciendo que apartir de 640px cuando crece me cambie h1 */
+    /* en este caso pasa de blanco a rojo */
+}
+
+/* md */
+@media (min-width: 768px) {
+    h1{
+        color:green;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    h1{
+        color:yellow;
+    }
+}
+
+/* xl */
+@media (min-width:1280px){
+    h1{
+        color:brown;
+    }
+}

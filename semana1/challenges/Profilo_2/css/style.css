@@ -85,8 +85,8 @@ main {
 }
 
 .container-profile > img {
-  width: 350px;
-  height: 350px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
@@ -185,8 +185,8 @@ main {
 }
 
 .container-about-me > div > img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
 }
 
