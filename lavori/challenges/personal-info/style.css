@@ -24,7 +24,7 @@ body{
 main{
     /* border: solid; */
     width: 70%;
-    height: 70vh;
+    height: 84vh;
     display: flex;
     justify-content: center;
     background-color:rgb(63, 114, 157);
@@ -38,8 +38,8 @@ h2{
 }
 
 section > div  > p {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 15px;
+    line-height: 20px;
     color:dimgrey;
 }
 
@@ -92,12 +92,12 @@ ul > li {
     /* border: solid blue; */
     background-color: white;
     border-radius: 15px;
-    height: 45vh;
+    height: 55vh;
     display: flex;
     margin-left: 20px;
     margin-right: 20px;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -106,10 +106,10 @@ ul > li {
     /* border: solid; */
     width: 90%;
     height: 30vh;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap:15px;
     
 
 }
