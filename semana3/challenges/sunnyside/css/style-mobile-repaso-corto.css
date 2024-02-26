@@ -1,286 +1,402 @@
-
 /* mobile- repaso - corto xk le vamos a kitar las repetidas y vamos a crear
 classes  aparte y vamos a ponerlo en html pero tenemos que estar atentos
  xk tenemos condicionales por el modo desktop */
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: fraunces, sans-serif;
-    /* tipo de caracter */
+a{
+    text-decoration: none !important;
 }
+/* aca le estamos diciendo que a todos los elementos <a> elimine el sub-rallado 
+metiendole el !important xk le decimos que esto prevalesca ante todos */
+/* lo podemos ver verso la fine de este programa en la parte de footer en este caso */
+
+/* aunque si esto prevalece ante qualikier parte donde este xk prevalece */
 
 
 
-
+body {
+  font-family: fraunces, sans-serif;
+  /* tipo de caracter */
+}
 
 /* creada una class que se repetia */
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
-
-
 
 /* class de los parrafos */
-.font-barlow{
-    font-family:"barlow", sans-serif;
-    font-weight: 600;
-    /* spessore delle lettere */
-
+.font-barlow {
+  font-family: "barlow", sans-serif;
+  font-weight: 600;
+  /* spessore delle lettere */
 }
 
-
-
 /* creada una class que se repetia */
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
 
-
-
-
 /* creada una class que se repetia */
-.bg-no-repeat{
-/*  ahora si nos fijamos aca quando estiramos la pantalla orizontalmente la
+.bg-no-repeat {
+  /*  ahora si nos fijamos aca quando estiramos la pantalla orizontalmente la
     imagen se va multiplica , triplicarse ecc... hasta conseguir llenar el fondo*/
-    background-repeat: no-repeat !important;
-    /* aca le ponemos esto asi no repite la imagen al estirar la pantalla */
+  background-repeat: no-repeat !important;
+  /* aca le ponemos esto asi no repite la imagen al estirar la pantalla */
 }
-
-
 
 /* creada una class que se repetia */
-.bg-positions-center{
-    background-position: center !important;
-    /* centramos la imagen  */
+.bg-positions-center {
+  background-position: center !important;
+  /* centramos la imagen  */
 }
-
 
 /* creada una class que se repetia */
 .bg-size-cover {
-    background-size: cover !important;
-    /* stilo mobile */
+  background-size: cover !important;
+  /* stilo mobile */
 }
 
 /* creada una class que se repetia */
 .h-50 {
-    height: 50vh !important;
+  height: 50vh !important;
 }
-
-
 
 /* ---eliminamos display:flex xk gia tiene su class y se repite--- */
 .nav {
-    /* border: solid red; */
-    background-color:deepskyblue;
+  /* border: solid red; */
+  background-color: deepskyblue;
 
-    /*  se posiciona de extremo a extremo */
-    justify-content: space-between;
+  /*  se posiciona de extremo a extremo */
+  justify-content: space-between;
 
-    /* justify-content: space-around; */
-    /* esto te lo centra pero con espacios al costado */
-    align-items: center;
-    padding:20px;
+  /* justify-content: space-around; */
+  /* esto te lo centra pero con espacios al costado */
+  align-items: center;
+  padding: 20px;
 }
 
 .btn-menu {
-    /* border: solid red; */
-    background-color: transparent;
-    /* siendo un buttom non va el color de lo sfondo percio lo metemos trasparente */
-    border: none;
-    /* eliminamos el border con none */
-    cursor: pointer;
-    /* cursore in manina */
-
+  /* border: solid red; */
+  background-color: transparent;
+  /* siendo un buttom non va el color de lo sfondo percio lo metemos trasparente */
+  border: none;
+  /* eliminamos el border con none */
+  cursor: pointer;
+  /* cursore in manina */
 }
-
 
 /* en modo responsive no queremos la lista ul
 xk estamos en mobile y no en desktop*/
-.menu{
-    /* le pondremos: */
-    display: none;
-    /* eliminamos con none el display */
+.menu {
+  /* le pondremos: */
+  display: none;
+  /* eliminamos con none el display */
 }
-
 
 /* creada una class que se repetia */
-.text-xl{
-    font-size: 38px !important;
+.text-xl {
+  font-size: 38px !important;
 }
-
-
-
 
 /* --- eliminamos al main background-repeat: no-repeat - background-position: center-
 background-size: cover xk son classes que se repiten---  */
 
-main{      /*  vamos a poner una imagen desde css */
+main {
+  /*  vamos a poner una imagen desde css */
 
-    /* para que el main tenga la foto de la naranja se mete un url al background */
-    /* la url va apuntar al archivo que tengo localmente  */
-    background: url(../assets/mobile/image-header.jpg);
-    /* poniendo asi la naranja no se va aver asi que le ponemos un height */
+  /* para que el main tenga la foto de la naranja se mete un url al background */
+  /* la url va apuntar al archivo que tengo localmente  */
+  background: url(../assets/mobile/image-header.jpg);
+  /* poniendo asi la naranja no se va aver asi que le ponemos un height */
 
-    /* height:100vh ; */
-    /* con esto vemos un poco la naranja de ahy lo acomodamos */
-    height: 70vh;
-    /* lo ponemos de acuerdo al ejemplo  */
+  /* height:100vh ; */
+  /* con esto vemos un poco la naranja de ahy lo acomodamos */
+  height: 70vh;
+  /* lo ponemos de acuerdo al ejemplo  */
 }
-
 
 h1 {
-    color:white;
-    text-align: center;
-    text-transform:uppercase ;
-    /* trasforma las letras en maiucula */
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  /* trasforma las letras en maiucula */
 
-    /* text-transform: lowercase; */
-    /* trasforma en minuscula */
+  /* text-transform: lowercase; */
+  /* trasforma en minuscula */
 
-    /* text-transform: capitalize; */
-    /* hace que las iniciales comiencen con maiusculas y poi minuscula */
+  /* text-transform: capitalize; */
+  /* hace que las iniciales comiencen con maiusculas y poi minuscula */
 
-    font-size: 60px;
-    padding-top: 35px;
-
+  font-size: 60px;
+  padding-top: 35px;
 }
-
 
 /* class de una imagen (la freccia) */
-.arrow-down{
-    /* border: solid; */
-    /* es de tipo inline */
-    display: block;
-    /* lo trasformamos en block  */
-    margin: auto;
-    /* activando el block podemos usar el margin auto
+.arrow-down {
+  /* border: solid; */
+  /* es de tipo inline */
+  display: block;
+  /* lo trasformamos en block  */
+  margin: auto;
+  /* activando el block podemos usar el margin auto
     asi se adatta */
-    height: 160px;
-    margin-top: 35px;
+  height: 160px;
+  margin-top: 35px;
 }
-
-
-
 
 /* --- eliminamos background-repeat: no-repeat - background-position: center-
 background-size: cover xk son classes que se repiten---  */
 
 /* ---eliminamos el height: 50vh; xk gia tiene su class y se repite --- */
 
-.bg-egg{ /* class para la imagen del huevo */
-    background: url(../assets/mobile/image-transform.jpg);
-    /* poniendo asi la naranja no se va aver asi que le ponemos un height */
+.bg-egg {
+  /* class para la imagen del huevo */
+  background: url(../assets/mobile/image-transform.jpg);
+  /* poniendo asi la naranja no se va aver asi que le ponemos un height */
 
-    /* height:100vh ; */
-    /* con esto vemos un poco la naranja de ahy lo acomodamos */
-    /* height: 50vh; */
-    /* lo ponemos de acuerdo al ejemplo  */
+  /* height:100vh ; */
+  /* con esto vemos un poco la naranja de ahy lo acomodamos */
+  /* height: 50vh; */
+  /* lo ponemos de acuerdo al ejemplo  */
 }
-
-
-
-
 
 /* ---eliminamos el display:flex xk gia tiene su class y se repite --- */
 /* ---eliminamos el height: 50vh; xk gia tiene su class y se repite --- */
 
 .container-egg {
-    /* border: solid; */
-   flex-direction: column;
-   justify-content: center;
-   /* centra de forma vertical
+  /* border: solid; */
+  flex-direction: column;
+  justify-content: center;
+  /* centra de forma vertical
    estando el colunm invierto   */
-   padding: 16px;
+  padding: 16px;
 }
-
-
-
-
 
 /* ---eliminamos el font-size: 38px; xk gia tiene su class y se repite --- */
 .container-egg > div > h2 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-
-
-
-
 .container-egg > div > p {
-    font-size: 18px;
-    line-height: 1.5;
-    /* para que vea un poco mas separado entre los textos */
-    color:darkgrey;
+  font-size: 18px;
+  line-height: 1.5;
+  /* para que vea un poco mas separado entre los textos */
+  color: darkgrey;
 }
 
 .link {
-    text-transform: uppercase;
-    /* tradformo in maiuscula */
-    font-weight: bold;
-    /* si como es un inline el margin no funciona allora lo trasformamos en block */
-    /* para verificar si es inline hacemos un border */
+  text-transform: uppercase;
+  /* tradformo in maiuscula */
+  font-weight: bold;
+  /* si como es un inline el margin no funciona allora lo trasformamos en block */
+  /* para verificar si es inline hacemos un border */
 
-    /* border: solid; */
+  /* border: solid; */
 
-    /* inline ocupa solo el espacio del elemento  */
-    /* block ocupa todo un bloke */
+  /* inline ocupa solo el espacio del elemento  */
+  /* block ocupa todo un bloke */
 
-    display: block;
-    margin-top: 20px;
-    color:black;
-    text-decoration: none;
-    /* eliminamos el sub-rallado */
+  display: block;
+  margin-top: 20px;
+  color: black;
+  text-decoration: none;
+  /* eliminamos el sub-rallado */
 }
-
-
-
-
 
 /* --- eliminamos background-repeat: no-repeat - background-position: center-
 background-size: cover xk son classes que se repiten---  */
 
-.bg-cup{ /* class para la imagen de la copa */
-    background: url(../assets/mobile/image-stand-out.jpg);
-    /* poniendo asi la naranja no se va aver asi que le ponemos un height */
+.bg-cup {
+  /* class para la imagen de la copa */
+  background: url(../assets/mobile/image-stand-out.jpg);
+  /* poniendo asi la naranja no se va aver asi que le ponemos un height */
 
-    /* height:100vh ; */
-    /* con esto vemos un poco la naranja de ahy lo acomodamos */
-    /* height: 50vh; */
-    /* lo ponemos de acuerdo al ejemplo  */
+  /* height:100vh ; */
+  /* con esto vemos un poco la naranja de ahy lo acomodamos */
+  /* height: 50vh; */
+  /* lo ponemos de acuerdo al ejemplo  */
 }
 
-
-.bg-cherry{
-    background: url(../assets/mobile/image-graphic-design.jpg);
-    height: 80vh;
-    align-items: end;
-    /* align-items: flex-end; */
-    /* align-items: end;   oppure  align-items: flex-end; son lo mismo
+.bg-cherry {
+  background: url(../assets/mobile/image-graphic-design.jpg);
+  height: 80vh;
+  align-items: end;
+  /* align-items: flex-end; */
+  /* align-items: end;   oppure  align-items: flex-end; son lo mismo
     end = abajo  */
 }
 
-
 .bg-cherry > div {
-    /* border: solid; */
-    margin-bottom: 80px;
-    color: darkcyan;
+  /* border: solid; */
+  margin-bottom: 80px;
+  color: darkcyan;
 }
 
 .bg-cherry > div > h2 {
+  /* border: solid; */
+  margin-bottom: 20px;
+}
+
+.bg-orange {
+  background: url(../assets/mobile/image-photography.jpg);
+  height: 80vh;
+  align-items: end;
+}
+
+.bg-orange > div {
+  /* border: solid; */
+  margin-bottom: 80px;
+  color: rgb(111, 83, 213);
+}
+
+.bg-orange > div > h2 {
+  /* border: solid; */
+  margin-bottom: 20px;
+}
+
+.section-testimonials {
+  /* border: ssolid; */
+  padding-top: 60px;
+  background-color: azure;
+  margin-bottom: 40px;
+  display: flex;
+  /* aca usaria esto pero como quiero una colunna uso lo contrario */
+  /* align-items: center; */
+  /* uso esto de aca */
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-testimonials > h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  /* trasforma in maiuscula */
+  letter-spacing: 5px;
+  /* espacio entre letras */
+}
+
+.container-testimonials {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container-testimonials > div > img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 30px;
+}
+
+.text-testimonials {
+  font-size: 18px;
+  width: 80%;
+  margin: auto;
+}
+
+.text-name-testimonial {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.container-testimonials > div > p {
+  margin-top: 20px;
+}
+
+.section-mini {
+  display: flex;
+  /* para que flex respete cada ancho width se usa:  */
+  flex-wrap: wrap;
+  /* esto hace que se respete el ancho de cada elemento */
+}
+
+.section-mini > div {
+  height: 300px;
+  width: 50%;
+  /* border: solid; */
+}
+
+.bg-mini-milk {
+  background: url("../assets/mobile/image-gallery-milkbottles.jpg");
+}
+
+.bg-mini-orange {
+  background: url("../assets/mobile/image-gallery-orange.jpg");
+}
+
+.bg-mini-cone {
+  background: url("../assets/mobile/image-gallery-cone.jpg");
+}
+
+.bg-mini-sugar {
+  background: url("../assets/mobile/image-gallery-sugar-cubes.jpg");
+}
+
+.footer{
     /* border: solid; */
-    margin-bottom: 20px;
+    background-color: rgb(149, 218, 194);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+}
+
+.footer-logo {
+    /* border: solid; */
+    width: 200px;
+}
+
+.footer-menu{
+    list-style: none;
+    gap:20px;
 }
 
 
-.img-orange {
-    position: absolute;
+.footer-menu > li > a {
+    /*  aca lo vamos eliminar xk  le podremos al inicio con un !important  */
+    /* text-decoration: none; */
+    color: aquamarine;
 }
+
+/* en este caso que vemos que cada rato aparece text-decoration: none; le podemos poner
+desde un inicio que al elemento <a> gia que todos tienen el sub-rallado un !important
+para prevalesca su todos y los elminine con none */
+
+
+
+
+.footer-social-media{
+    /* border: solid; */
+    display: flex;
+    align-items: center;
+    gap:20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -298,31 +414,32 @@ pero queriendo podemos cambiar con otras dimensiones */
 
 /* sm */
 @media (min-width: 640px) {
-    h1{
-        color:red;
-    }
-    /* aca le estamos diciendo que apartir de 640px cuando crece me cambie h1 */
-    /* en este caso pasa de blanco a rojo */
+  h1 {
+    color: red;
+  }
+  /* aca le estamos diciendo que apartir de 640px cuando crece me cambie h1 */
+  /* en este caso pasa de blanco a rojo */
 }
 
 /* md */
 @media (min-width: 768px) {
-    h1{
-        color:green;
-    }
+  h1 {
+    color: green;
+  }
 }
 
 /* lg */
 @media (min-width: 1024px) {
-    h1{
-        color:yellow;
-    }
+  h1 {
+    color: yellow;
+  }
 }
 
 /* xl */
-@media (min-width:1280px){
-    h1{
-        color:brown;
-    }
+@media (min-width: 1280px) {
+  h1 {
+    color: brown;
+  }
 }
+
 

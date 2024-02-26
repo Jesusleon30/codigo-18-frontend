@@ -167,6 +167,74 @@
         height: 70vh !important; 
     } 
 
+
+    .container-fruit {
+        display: flex;
+    }
+
+    .container-fruit > section > div {
+        border: solid;
+        width: 70%;
+        /* ahora quiero que se centre solo a los lados uso */
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+    .bg-cherry{
+        background: url(../assets/desktop/image-graphic-design.jpg);
+        flex:1 ;
+        /* asi mide igual que la naranja */
+    }
+
+    .bg-orange {
+        background: url(../assets/desktop/image-photography.jpg);
+        flex:1;
+        /* asi mide igual que la ciliegia */
+    }
+    /* de 1 a 1 nivel de propriedad */
+
+
+
+
+    .container-testimonials{
+        /* border: solid; */
+        flex-direction:row;
+    }
+
+
+    .section-mini > div {
+        height: 600px;
+        width: 25%;
+        /* asi se divide en 4 partes de iguales 
+        todo es 100% : 4 = 25% */
+    }
+
+    .bg-mini-milk {
+        background: url("../assets/desktop/image-gallery-milkbottles.jpg");
+      }
+    
+      .bg-mini-orange {
+        background: url("../assets/desktop/image-gallery-orange.jpg");
+      }
+    
+      .bg-mini-cone {
+        background: url("../assets/desktop/image-gallery-cone.jpg");
+      }
+    
+      .bg-mini-sugar {
+        background: url("../assets/desktop/image-gallery-sugarcubes.jpg");
+      }
+
+
+
+
+
+
+
+
+
     
 
 
