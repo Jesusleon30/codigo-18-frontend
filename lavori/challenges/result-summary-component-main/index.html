@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summary Component</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="summary-component">
+      <section class="result">
+        <h3 class="result__subtitle">Your Result</h3>
+        <!-- vamos a utilizar la nomenclatura ben consiste en darle un nombre siguiendo ciertos pasos
+        bloque poi  elemento y modificador -->
+
+        <div class="result__stats">
+            <!-- le ponemos una classe con doblegion bajo  -->
+
+          <h1>76</h1>
+          <small>of 100</small>
+          <!-- puede ser tambien un span al puesto de small  -->
+          <!-- small es para ayudar con las letras pequegnas esa es la diferencia 
+            o usar span y le das el tamagno con css -->
+        </div>
+
+        <h2 class="result__title">Great</h2>
+        <p class="result__text">
+          You scored higher than 65% of the people who have taken these tests
+        </p>
+      </section>
+      <section class="summary">
+        <h3 class="summary__title">Summary</h3>
+        <div class="summary__wrap">
+            <div class="summary-row">
+                <div class="summary-row__title">
+                    ⭐ Reaction </div>
+                <div class="summary-row__stats"> 
+                    80 <span>/100</span>
+                <!-- lo vamos a colocar dentro uno span para darle un color diferente  -->
+                </div>
+            </div>
+            <div class="summary-row">
+              <div class="summary-row__title">
+                  ✨  memory  </div>
+              <div class="summary-row__stats"> 
+                  80 <span>/100</span>
+              <!-- lo vamos a colocar dentro uno span para darle un color diferente  -->
+              </div>
+            </div>
+            <div class="summary-row">
+              <div class="summary-row__title">
+                  🦯 verbal</div>
+              <div class="summary-row__stats"> 
+                  80 <span>/100</span>
+              <!-- lo vamos a colocar dentro uno span para darle un color diferente  -->
+              </div>
+              </div>
+              <div class="summary-row">
+                <div class="summary-row__title">
+                   🔍 visual </div>
+                <div class="summary-row__stats"> 
+                    80 <span>/100</span>
+                <!-- lo vamos a colocar dentro uno span para darle un color diferente  -->
+                </div>
+              </div>
+        </div>
+        <button class="summary__button">continue</button>
+      </section>
+    </main>
+  </body>
+</html>
