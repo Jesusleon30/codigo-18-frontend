@@ -85,9 +85,6 @@ body{
     align-items: center;
     /* eje segundario  */
     border-radius: 16px;
-
-
-
 }
 
 
@@ -141,7 +138,7 @@ body{
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     body{
         grid-template-columns: 80px 1fr;
     }
@@ -151,7 +148,7 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: repeat (6,200px);
 
-        grid-template-areas:initial;
+        grid-template-areas: initial;
         /* tenemos que disabilitar las areas asi no crean conflicto al reducir la pantalla */
         /* initial lo disabilita   */
     }
@@ -163,3 +160,5 @@ body{
 
         /* !important significa mayor importancia le da prevalencia a esas propriedades */
     }
+
+}

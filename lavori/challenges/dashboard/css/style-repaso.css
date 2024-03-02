@@ -1,0 +1,175 @@
+
+/* variables */
+/* raiz de la sintassi */
+:root{
+    --bg-1: #f1b61f;
+    --bg-2: #c87474;
+    --bg-3: #6aad9b;
+    --bg-4: #5b78e0;
+    /* variabili */
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    /* calcula los pixeles metidos en automatico */
+}
+
+body{
+    /* border: solid; */
+    background-color: red;
+    height: 100vh;
+
+    display: grid;
+    /* inventamos una griglia */
+
+
+    /* colunnas y filas :  */
+
+    grid-template-columns: 200px 1fr ;
+    /* una colunna de 200px  */
+    /* 1fr ocupa todo el espacio restante del ancho (completa todo lo que sobra) */
+
+    grid-template-rows: 60px 1fr;
+    /* una fila de 60 px  */
+    /* 1fr completa todo el alto */
+
+
+    /* coincetto de areas */
+    grid-template-areas:
+    /* le decimos como lo queremos  */
+    "side header"
+    "side main";
+
+
+
+}
+
+.header{
+    background-color: var(--bg-1);
+    /* inserisco la variabile */
+    grid-area: header ;
+    /* le doy el posicionamiento dentro la griglia */
+
+    display: flex;
+    justify-content: space-between;
+    /* va de extremo a extremo */
+
+    align-items: center;
+    /* centramos verticalmente */
+
+    padding: 16px;
+    /* espacio interno */
+}
+
+.sidebar{
+    background-color: var(--bg-2);
+    grid-area:side ;
+}
+
+.main{
+    background-color: var(--bg-3);
+    grid-area: main;
+
+    display: grid;
+    /* inventamos una griglia */
+
+    grid-template-columns: 1fr 1fr 1fr ;
+    /* le ponemos tres colunnas iguales */
+
+    grid-template-rows: 1fr 1fr 1fr  ;
+    /* le ponemos tres filas iguales */
+
+    /* le decimos las areas dentro la griglia */
+    grid-template-areas:
+     /*le ponemos los nombres que queramos c1 oppure a1  ecc...
+     depsues con grid-area le aplicamos la propriedad  */
+    "c1 c2 c3"
+    "c4 c4 c5"
+    "c4 c4 c6";
+
+    gap: 20px;
+    /* espacio entre los elementos */
+
+    padding: 24px;
+    /* espacio interno */
+
+}
+
+.card{
+    background-color: var(--bg-4);
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+
+/* elijo al primer hijo */
+.card:nth-child(1) {
+    grid-area: c1;
+    /* aplico la propriedad area y le asigno el c1 */
+}
+
+
+/* elijo al segundo hijo */
+.card:nth-child(2) {
+    grid-area: c2;
+}
+
+/* elijo al tercer hijo */
+.card:nth-child(3) {
+    grid-area: c3;
+}
+
+/* elijo al quarto hijo */
+.card:nth-child(4) {
+    grid-area: c4;
+}
+
+/* elijo al quinto hijo */
+.card:nth-child(5) {
+    grid-area: c5;
+}
+
+/* elijo al sexto hijo */
+.card:nth-child(6) {
+    grid-area: c6;
+    /* aplico la propriedad area y le asigno el c6 */
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        grid-template-columns:  80px 1fr;
+    }
+
+    .main {
+        /* para que funcionen las filas y colunnas necesitamos inabilitar el template area
+        osea donde donde tiene que ver con aria  */
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows: repeat(6, 200px);
+        /* 6 filas con 200px de ancho a cada uno */
+
+        grid-template-areas: initial;
+        /* disabilitamos las areas con initial */
+
+        /* asi lo adactamos a un  dispositivo mobil */
+    }
+
+    .card{
+        grid-area: initial !important;
+        /* si vemos que no funciona el initial osea la disabilitacion 
+        le ponemos !important */
+    }
+
+
+}
+
+
+
+
