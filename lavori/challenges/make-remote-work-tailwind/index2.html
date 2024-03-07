@@ -16,12 +16,12 @@
         <nav class=" justify-center items-center py-5 px-8 " >
             <div class=" flex justify-between items-center">
                 <div class="flex gap-10">
-                    <div class="">
+                    <div>
                         <button> 
                             <img src="./images/logo.svg" alt="logo"><a href=""></a>
                         </button>
                     </div>
-                    <div>
+                    <div class="hidden md:block">
                         <ul class="flex gap-[50px]">
                             <div class="flex  justify-center items-center gap-2">
                                 <li><a href="">Features</a></li>
@@ -36,7 +36,7 @@
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div class="hidden md:block">
                     <ul class="flex gap-10 justify-center items-center">
                         <li><a href=""></a>Login</li>
                         <li class="border border-black p-3 py-1 rounded-[12px]">
@@ -46,14 +46,31 @@
             </div>
         </nav>
     </header>
-    <main class="flex  items-center justify-center gap-[150px]  ">
-        <section class=" flex flex-col justify-between w-[450px] h-[620px]  " >
-                    <div class=" font-bold text-7xl mt-[100px]  ">
-                        <h1>Make</h1>
-                        <h1>remote work</h1>
+    <main class="md:flex items-center justify-center gap-[150px] md:flex-row-reverse ">
+        <section >
+            <div class="mt-5">
+                <img src="./images/image-hero-desktop.png"
+                class="flex w-[450px] "
+                 alt=" imagen desktop hero">
+            </div>
+
+            <div>
+                <img src="./images/image-hero-mobile1.png" 
+                class="hidden "
+                alt=" imagen mobile hero">
+            </div>
+
+        </section>
+
+        <section class=" flex md:flex-col md:justify-between w-[450px] h-[620px] flex-col  " >
+                    <div class=" font-bold  md:text-7xl mt-[100px] text-5xl ">
+                        <div class="flex md:flex-col justify-center gap-2">
+                           <h1>Make</h1>
+                           <h1>remote work</h1>
+                        </div>
                     </div>
         
-                    <div class="text-[18px] text-gray-700">
+                    <div class=" [18px] text-gray-700">
                         <h2>Get your team in sync, no matter your location.</h2>
                         <h2>Streamline processes, create team rituals, and</h2>
                         <h2>watch productivity soar.</h2>
@@ -81,21 +98,10 @@
                 
                         </div> 
         </section>
-        <section >
-            <div class=" hidden sm:block flex w-[450px] mt-5  ">
-                <img src="./images/image-hero-desktop.png" alt=" imagen desktop hero">
-            </div>
-        </section>
+        
     </main>
 </body>
 </html>
-
-
-
-
-
-
-
 
 
 
