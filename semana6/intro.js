@@ -73,7 +73,6 @@ let suma = 0;
 console.log(null + 10);
 console.log(0 + 10);
 
-
 const alumnos = ["Pepe", "Maria", "Juan"];
 const persona = {
   nombre: "Linder",
