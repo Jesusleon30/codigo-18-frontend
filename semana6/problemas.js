@@ -17,22 +17,36 @@ function invertirCadena(texto) {
   return texto.split("").reverse().join("");
 }
 
-invertirCadena(100); // 001
+invertirCadena(100); 
+//  'Unicamente aceptamos textos'
+
 invertirCadena(true);
+//  'Unicamente aceptamos textos'
+
 invertirCadena("hola mundo");
+//  'odnum aloh'
 
 /*
 Contar la cantidad de vocales en una cadena:
 
-Crea una función que tome una cadena(string) como entrada y devuelva la cantidad de vocales que contiene. Puedes considerar tanto las vocales en mayúsculas como en minúsculas.
+Crea una función que tome una cadena(string) como entrada y devuelva\
+la cantidad de vocales que contiene. Puedes considerar tanto las vocales
+en mayúsculas como en minúsculas.
 
 hola => 2
 celular => 3
 telefono => 4
 */
 
+
+
+video 6.03 a 2.00.00
+
+
+
 function contarVocales(texto) {
   if (typeof texto !== "string") return "No es un texto";
+  //se puede meter en una sola linea de codigo en if solo si esque hay un return directamente
 
   const vocales = "aeiou".split("");
   const textoEnMiniscula = texto.toLowerCase();
