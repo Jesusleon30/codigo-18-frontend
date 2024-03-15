@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <script defer src="./js/selectors.js"></script>
+    <script defer src="./js/data.js"></script>
+    <script defer src="./js/utils.js"></script>
     <script defer src="./js/app.js"></script>
   </head>
   <body>
@@ -20,7 +23,7 @@
       <div class="p-6">
         <img src="./images/logo.svg" alt="" />
       </div>
-      <form class="w-full border h-full md:h-auto xl:w-[800px]">
+      <div class="form w-full border h-full md:h-auto xl:w-[800px]">
         <div>
           <div>
             <label for="input-bill" class="text-title">Bill</label>
@@ -40,7 +43,7 @@
             <label for="input-people" class="text-title"
               >Number of people</label
             >
-            <div class="container-input">
+            <div id="container-input-people" class="container-input">
               <img src="./images/icon-person.svg" alt="" />
               <input id="input-people" type="text" placeholder="0" />
             </div>
@@ -54,7 +57,7 @@
                 <span class="text-gray-300">/ person</span>
               </div>
               <div>
-                <p class="text-4xl text-[#2abfac]">$ 0.00</p>
+                <p class="text-4xl text-[#2abfac]" id="per-person">$ 0.00</p>
               </div>
             </div>
             <div class="flex justify-between">
@@ -63,17 +66,18 @@
                 <span class="text-gray-300">/ person</span>
               </div>
               <div>
-                <p class="text-4xl text-[#2abfac]">$ 0.00</p>
+                <p class="text-4xl text-[#2abfac]" id="total">$ 0.00</p>
               </div>
             </div>
             <button
+              id="button-calculate"
               class="bg-[#2abfac] py-4 rounded-md text-2xl text-[#00474b] uppercase"
             >
               Reset
             </button>
           </div>
         </div>
-      </form>
+      </div>
     </main>
   </body>
 </html>

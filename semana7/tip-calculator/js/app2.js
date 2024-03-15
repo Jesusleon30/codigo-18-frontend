@@ -1,60 +1,76 @@
+
+
+// aca esta completo despues lo reparto en varios archivos
+// como selectors, data, utils .... 
+
+
+
+const containerBill = document.querySelector("#contailer-bill");
+const containerPercentages = document.querySelector("#container-percentage");
+const inputBill = document.querySelector("#input-bill");
+// array con los valores de los botons
+const percentages = [
+  {
+    type: "button",
+    value: "5%",
+    isCheck: false,
+  },
+  {
+    type: "button",
+    value: "10%",
+    isCheck: false,
+  },
+  {
+    type: "button",
+    value: "15%",
+    isCheck: false,
+  },
+  {
+    type: "button",
+    value: "25%",
+    isCheck: false,
+  },
+  {
+    type: "button",
+    value: "50%",
+    isCheck: false,
+  },
+  {
+    type: "input",
+    value: "",
+    isCheck: false,
+  },
+];
+
 // click
 containerBill.onclick = function () {
   inputBill.focus();
 };
 
-containerInputPeople.onclick = function () {
-  inputPeople.focus();
-};
-
 inputBill.onkeyup = function (event) {
-  validateInputIfNumber(event, "event", containerBill, inputBill);
-};
+  const inputValue = event.target.value;
 
-inputPeople.onkeyup = function (event) {
-  const validate = validateInputIfNumber(
-    event,
-    "event",
-    containerInputPeople,
-    inputPeople
-  );
-  if (!validate) return;
-};
+  if (inputValue[0] === "0") {
+    containerBill.classList.add("border", "border-red-500");
+  } else {
+    containerBill.classList.remove("border", "border-red-500");
+  }
 
-buttonCalculate.onclick = function () {
-  // Paso1: Obtener el valor del input bill
-  const billValue = Number(inputBill.value); // 100
-  const peopleValue = Number(inputPeople.value); // 5
-
-  // Paso2: Obtener los valores de nuestro input y botones
-  const getValuePercetange =
-    percentages.find(function (percentage) {
-      return percentage.isCheck;
-    }) ?? percentages.at(-1);
-
-  /**
-   * Replace es una funcion la cual me permite buscar caracteres dentro de un
-   * string y poder reemplazarlos
-   */
-  const parsePercetange = Number(getValuePercetange.value.replace("%", "")); // 10
-
-  const operation = billValue + (billValue * parsePercetange) / 100;
-  const opetationPerPerson = operation / peopleValue;
-
-  perPerson.textContent = `$ ${opetationPerPerson.toFixed(2)}`;
-  total.textContent = `$ ${operation.toFixed(2)}`;
+  if (isNaN(inputValue)) {
+    this.value = inputValue.slice(0, -1);
+  }
 };
 
 /**
  * setButtonTip
  * Recibe como parametro a un element que en este contexto es button
- * lo que queremos obtener de este button es el indice del boton al que le
+ * lo que queremos obtener de este button es el indice del boton al que le 
  * dieron click, sabiendo eso haremos lo siguiente
  */
 function setButtonTip(element) {
   // Paso1: Obtener el indice del button
   const buttonIndex = element.dataset.index; // 5% index = 0
-  // Paso2: Entrar al array de objecto y buscar por indicie y cambiar la
+  // Paso2: Entrar al array de objecto y buscar por indicie y cambiar la 
   // propiedad isCheck = true
   percentages[buttonIndex].isCheck = true;
 
@@ -75,9 +91,36 @@ function setButtonTip(element) {
  * por ende puedo accede a sus propiedades
  */
 function setInputTip(element) {
-  const validate = validateInputIfNumber(element, "element", element, element);
+  /**
+   * Paso1: Es validar que unicamente podamos escribir numeros en el input
+   * para ello primero vamos a capturar el valor actual del input
+   * y vamos a evaluar lo siguiente
+   */
+  const inputValue = element.value;
+  /**
+   * Si la primera letra de la palabra es igual a 0 vamos a colocar un border
+   * rojos en el input y NO vamos a des seleccionar el button, por ede uso
+   * return para que si entra a la condicion la funcion termine
+   */
+  if (inputValue[0] === "0") {
+    element.classList.add("border", "border-red-500");
+    return;
+  } else {
+    // Si no le quitamos el border rojo
+    element.classList.remove("border", "border-red-500");
+  }
 
-  if (!validate) return;
+  /**
+   * En este caso estamos usando la funcion `isNaN`
+   * isNaN: is Not a Number ()
+   * Si el valor del input is Not a Number vamos eliminar el ultimo caracter
+   * que el usuariuo escribio, para ello uso la funcion slice con los valores
+   * 0, -1, porque quiero inciar desde el ultimo caracter por ende uso el -1
+   * para empezar a contar de derecha a izquierda
+   */
+  if (isNaN(inputValue)) {
+    element.value = inputValue.slice(0, -1);
+  }
 
   /**
    * Si la validaciones anteriores fueron exitosas entonces ahora procedemos a
@@ -110,8 +153,6 @@ function setInputTip(element) {
       value: percentage.type === "input" ? element.value : percentage.value,
     };
   });
-
-  percentages = percetangesFalse;
   /**
    * Como en el map estamos creando un array con la informacion cambiada vamos a
    * pasarle ese nuevo array a la funcion renderPercentagesButtons la cual va a

@@ -25,7 +25,7 @@ main {
   gap: 50px;
 }
 
-form {
+.form {
   background-color: #fff;
   padding: 40px;
   border-radius: 16px;
@@ -68,4 +68,9 @@ form > div {
   font-size: 18px;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.active {
+  background-color: #2abfac !important;
+  color: #00474b !important;
 }
