@@ -149,7 +149,7 @@ percio usamos:
 // [ 'a', 'l', 'o', 'h' ]
 
 
-
+/
 "hola".split("")   //   [ 'h', 'o', 'l', 'a' ]
 // split me trasforma in un array
 
