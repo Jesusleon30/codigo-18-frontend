@@ -22,3 +22,11 @@ function findNaughtyStep(original, modified) {
   const original3 = "abcde";
   const modified3 = "abcde";
   console.log(findNaughtyStep(original3, modified3)); // ''
+
+
+
+
+
+
+
+  video 08.03.24   01:59:00

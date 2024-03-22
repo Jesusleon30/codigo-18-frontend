@@ -142,7 +142,7 @@ Object.entries(person2).length;
 // 5
 
 Object.entries(person2)
-// cada atributo keys y value se convierte en un array
+// cada atributo keys y values se convierte en un array
 /*
 [
   [ 'id', 1 ],
@@ -423,14 +423,53 @@ console.log(newBooks2)
 
 const prices = [100.3, 2000.45, 125, 305];
 
+// primero 
+const pricesIGV = prices.map(function (price){
+ return price * 1.18 
+})
+console.log(pricesIGV)
+// [ 118.35399999999998, 2360.531, 147.5, 359.9 ] 
+// hace la operacion pero tenemos que meterle .tofixed(2)  asi se ve mejor
+
+
+// segundo 
+const pricesIGV = prices.map(function (price) {
+  return ((price * 1.18).toFixed(2));
+});
+
+console.log(pricesIGV);
+// [ '118.35', '2360.53', '147.50', '359.90' ]
+// ma todo esto esta en string
+
+
+
+// tercero  -  lo trasformamos en number--
 const pricesIGV = prices.map(function (price) {
   return Number((price * 1.18).toFixed(2));
 });
 
 console.log(pricesIGV);
+// [ 118.35, 2360.53, 147.5, 359.9 ]
+
+
+/* 
+.toFixed(2) se usa solo para numeros pero retorna string
+ console.log(pricesIGV.toFixed(2)); // esto no es posible xk priceIGV es un array
+
+.tofixed  por defecto lo convierte en string
+
+ entonces le ponemos a que todo eso che se convierta en number (.....)
+ Number((price * 1.18).toFixed(2))
+ */
+
+
 
 // map -> []
+// map itera y retorna 
+
+
 // forEach -> nada
+// forEach solo itera y no retorna nada
 
 function countVowels(names) {
   const vowels = "aeiou".split("");
@@ -441,6 +480,9 @@ function countVowels(names) {
     // paso 1: covierto name a minuscula
     const nameInLowerCase = name.toLowerCase();
     let count = 0;
+    // contador count
+
+    // convierto uno string in array 
     nameInLowerCase.split("").forEach(function (letter) {
       if (vowels.includes(letter)) {
         count++;
@@ -457,3 +499,11 @@ function countVowels(names) {
 }
 
 countVowels(["Pepe", "Juan", "Maria", "Pedro"]);
+/*
+[
+  { originalName: 'Pepe', vowels: 2 },
+  { originalName: 'Juan', vowels: 2 },
+  { originalName: 'Maria', vowels: 3 },
+  { originalName: 'Pedro', vowels: 2 }
+]
+*/

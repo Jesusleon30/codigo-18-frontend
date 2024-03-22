@@ -1,0 +1,21 @@
+{
+  "name": "primer_codigo",
+  "version": "1.0.0",
+  "description": "primera libreria desarrollada para codigo como ejemplo de node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "education",
+    "codigo"
+  ],
+  "author": "\"\"\u001b[Djorge montesinos\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[M\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[J\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\"",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}

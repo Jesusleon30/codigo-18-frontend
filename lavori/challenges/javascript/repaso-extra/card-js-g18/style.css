@@ -1,0 +1,101 @@
+body {
+  
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    background-color: antiquewhite;
+  }
+  
+  .card {
+      background: #fff;
+      display: grid;
+      /* align-items: center; */
+      grid-template-rows: 55% 45%;
+      height: 93%;
+      width: 30%;
+      box-shadow: 10px 10px 25px 0px #3c3c3c;
+  }
+  
+  .imageContainer {
+     /* border: 2px solid black; */
+     background-image: url("./assets/gray.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 40px 10px;
+     width: 28rem;
+     height: 66%;
+  }
+  
+  .tag {
+    font-size: 0.9rem;
+    background-color: black;
+    border-radius: 5px;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 3px;
+  }
+  
+  .description {
+    background-color: #62c256;
+    color: #fff;
+    padding-left: 20px;
+    margin-top: -67px;
+  }
+  
+  .button {
+    background-color: gray;;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .feedback {
+    display: none;
+    background-color: #fff;
+    color: gray;
+  }
+  
+  
+  .colors {
+    display: flex;
+    width: 6rem;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .red {
+    background: red;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  
+  .gray {
+    background: gray;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  
+  .black {
+    background: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  
+  .colors-price {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: -15px;
+  }
+
