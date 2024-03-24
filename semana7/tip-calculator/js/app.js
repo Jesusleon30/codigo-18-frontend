@@ -1,11 +1,33 @@
+
+// // click al containerbill
+// containerBill.onclick = function () {
+//   console.log("hicimos un click"); // 
+// };
+// //  hicimos un click      app.js:4 
+
+
+
 // click
 containerBill.onclick = function () {
   inputBill.focus();
+  // osea puedo escribir dentro el inputbill 
 };
 
 containerInputPeople.onclick = function () {
   inputPeople.focus();
 };
+
+
+// // .onkeyup tiene un evento y se ejecuta cuando suelto la tecla
+// // este event tiene la informacion del input que estamos escriviendo
+// inputBill.onkeyup = function (event) {
+//   console.log(event)
+// };
+// // en el input puse  hola100
+// // KeyboardEvent {isTrusted: true, key: '5', code: 'Digit5', location: 0, ctrlKey: false, …}
+// // de lo que importa  dentro el object en target  es value:"hola100"
+// // con esto podemos ver si lo que escrivimos es un numero o letra
+
 
 inputBill.onkeyup = function (event) {
   validateInputIfNumber(event, "event", containerBill, inputBill);
@@ -57,12 +79,15 @@ function setButtonTip(element) {
   // Paso2: Entrar al array de objecto y buscar por indicie y cambiar la
   // propiedad isCheck = true
   percentages[buttonIndex].isCheck = true;
+  // entra al array y entra a la propriedad ischeck y cambialo a true
+
 
   // Paso3: Modificamos el valor de las otra opciones false
   for (let percentage in percentages) {
     // Paso4: Validamos que el indice sea diferente a buttonIndex
-    if (percentage !== buttonIndex) {
+    if (percentage !== buttonIndex) { // solo entra al if si es true
       percentages[percentage].isCheck = false;
+      
     }
   }
   // Paso5: Volvemos a renderizar lo botones con la informaciona actualizada
@@ -157,16 +182,37 @@ function renderButton(percentage, index) {
    */
   const extraClass = percentage.isCheck ? "active" : "";
 
+  // quando un elemento tenga la clase active
+  // va a cambiar el modo de style (ir a css para ver los cambios)
+
   /**
    * Cuando creamos el boton estamos asignando al funcion setButton(this) para
    * cada click del boton, entonces al igual que el input estamos creando el
    * data-index para poder saber la del boton al que le dieron click
    */
   return `
-    <button onclick="setButtonTip(this)" class="${extraClass}" data-index="${index}">
+    <button onclick="setButtonTip(this)" class="${extraClass}" data-index="${index}"> 
       ${percentage.value}
     </button>`;
 }
+/*
+envez de usar classe se puede usar en javascript data-(y un nombre que estee en el codigo)
+" data-index="${index}" es el indice del boton  
+lo llamo como por ej. .......dataset.index  ejemplo(element.dataset.index)
+yo al saber la posicion de cada elemento puedo saber quien es
+
+*/
+
+
+
+
+
+
+// ` $ { } ` dentro la Comilla inversa  sirve para anidar 
+
+
+
+
 
 /**
  * renderInput
@@ -186,6 +232,8 @@ function renderButton(percentage, index) {
  * y le vamos a pasar this
  * Recordemos que en este context this = input
  */
+
+// con esto creamos los botones por javascript
 function renderInput(percentage, index) {
   return `<input
             type="text"
@@ -205,7 +253,7 @@ function renderInput(percentage, index) {
  *
  */
 function renderPercentagesButtons(percentagesArray) {
-  // Paso1: Limpiamos el contenedor para evitar que se dupliquen los elementos
+  // Paso1: Limpiamos el container para evitar que se dupliquen los elementos
   containerPercentages.innerHTML = "";
 
   // Paso2: Iteramos el array que recibimos para poner pintar un boton o un inputs
@@ -225,8 +273,36 @@ function renderPercentagesButtons(percentagesArray) {
      * se reemplazaria en vez de adicionar
      */
     containerPercentages.innerHTML += html;
+    //                             += significa addizione 
   });
 }
 
 // Llamamos a la funcion para que cuando la web cargue pinte los boton por defecto
 renderPercentagesButtons(percentages);
+
+
+
+
+/*
+
+// esempio:  addizione
+
+let suma = 0
+suma = suma + 2
+console.log(suma)
+// 2
+
+
+let suma = 0
+suma += 2    (+= significa addizione)
+console.log(suma)
+ // 2
+
+let suma = 0
+suma += 2
+suma += 3
+console.log(suma)
+// 5
+
+
+*/

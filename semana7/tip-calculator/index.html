@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com/3.4.1"></script>
-    <script defer src="./js/selectors.js"></script>
+    <script defer src="./js/selectors-01.js"></script>
     <script defer src="./js/data.js"></script>
     <script defer src="./js/utils.js"></script>
     <script defer src="./js/app.js"></script>
@@ -27,17 +27,22 @@
         <div>
           <div>
             <label for="input-bill" class="text-title">Bill</label>
-            <div id="contailer-bill" class="container-input">
+            <div id="container-bill" class="container-input">
               <img src="./images/icon-dollar.svg" alt="" />
               <input id="input-bill" type="text" placeholder="0" />
             </div>
           </div>
           <div>
             <p class="text-title">Select Tip %</p>
+
+            <!-- este es el div de los button 5% 10% 20% 25% 50% (input) -->
+            <!-- desde javascript creamos los button e input desde los id e classe de hmtl -->
             <div
               id="container-percentage"
               class="container-percentage grid grid-cols-2 gap-3"
             ></div>
+            <!-- fine de los button e input -->
+
           </div>
           <div>
             <label for="input-people" class="text-title"

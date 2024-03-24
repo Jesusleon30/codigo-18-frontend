@@ -47,8 +47,28 @@ containerBill.onclick = function () {
   inputBill.focus();
 };
 
+
+//isNaN: is Not a Number ()
+
+
+// isNaN: is Not a Number ()
+// si le paso un numero va a darme false envez si le paso un texto o letra va a darme true
+
+
+// // .onkeyup tiene un evento y se ejecuta cuando suelto la tecla
+// // este event tiene la informacion del input que estamos escriviendo
+// inputBill.onkeyup = function (event) {
+//   console.log(event)
+// };
+// // en el input puse  hola100
+// // KeyboardEvent {isTrusted: true, key: '5', code: 'Digit5', location: 0, ctrlKey: false, …}
+// // de lo que importa  dentro el object en target  es value:"hola100"
+// // con esto podemos ver si lo que escrivimos es un numero o letra
+
+
 inputBill.onkeyup = function (event) {
   const inputValue = event.target.value;
+  //               = // este event tiene la informacion del input que estamos escriviendo
 
   if (inputValue[0] === "0") {
     containerBill.classList.add("border", "border-red-500");
@@ -60,6 +80,33 @@ inputBill.onkeyup = function (event) {
     this.value = inputValue.slice(0, -1);
   }
 };
+/*
+.slice (0, -1) es un remove // me remueve la ultima letra 
+esempio 
+// event.target.value  = 12s  aca queremos eliminar el ultimo caracter string con .slice
+// .slice(0 (inicio), -1 (fin)) // recive dos parametros que seria parametro de inicio y parametro de fine
+12s.slice (0 , 1) me va a borrar el uno seria 2s pero yo no quiero borrar el primer elemento 
+
+event.target.value.slice (0, -1)
+en javascript quando queremos hacer referencia al ultimo elemento basicamente ponemos el -1
+12s.slice (0 , -1) ma ve a a borrar la s seria 12
+truco:
+para que envez que comienze a contar desde la izquierda comienze a contar desde la derecha 
+ */
+
+
+
+/* ----  this ---- */
+/* 
+es el detonador de todo el elemento de html en este caso es el inputBill
+seria lo principal si al interno meto un this hace referencia al inputBill 
+
+se hace referencia al principal 
+*/
+
+
+
+
 
 /**
  * setButtonTip
@@ -227,17 +274,7 @@ function renderButton(percentage, index) {
  * y le vamos a pasar this
  * Recordemos que en este context this = input
  */
-function renderInput(percentage, index) {
-  return `<input
-            type="text"
-            value="${percentage.value}"
-            data-index="${index}"
-            id="input-bill-${index}"
-            onkeyup="setInputTip(this)"
-            class="outline-none p-2 bg-[#F3F8FB] rounded-md"
-            placeholder="Custom"
-          />`;
-}
+
 
 /**
  * renderPercentagesButtons
