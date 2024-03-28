@@ -6,9 +6,17 @@
     <title>Login</title>
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <!-- el orden es importante sino no funciona -->
     <script defer src="./js/users.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script defer src="./js/app.js"></script>
+
+    <style>
+      body{
+        background-color: rgb(26, 151, 151); 
+       }
+    </style>
+
   </head>
   <body>
     <main class="max-w-md mx-auto">
@@ -26,9 +34,11 @@
             <input
               class="w-full px-2 py-3 border border-black rounded-md outline-none"
               type="email"
-              name="email"
+              name="email" 
               placeholder="Enter email id"
             />
+            <!-- name es unico y sirve a identificar la informacion a traves 
+              el backend e frontend es un tipo id pero para los input -->
           </div>
           <div>
             <input
@@ -42,6 +52,7 @@
             <button class="py-3 text-lg bg-[#FFC600] w-full rounded-md">
               Login
             </button>
+            <!-- button por defecto sera submit -->
           </div>
         </form>
       </div>

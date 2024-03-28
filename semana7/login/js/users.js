@@ -1,4 +1,9 @@
+
+// informacion con object 
+
+
 const users = [
+  // creo varios usuarios:
     {
       id: 1,
       name: "Linder",
@@ -24,3 +29,7 @@ const users = [
       document_number: "1111111",
     },
   ];
+
+
+
+  
