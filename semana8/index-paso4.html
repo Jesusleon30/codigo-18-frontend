@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <!-- <script defer src="./js/app-paso1.js"></script> -->
+    <!-- <script defer src="./js/app-paso2.js"></script> -->
+    <!-- <script defer src="./js/app-paso3.js"></script> -->
+    <script defer src="./js/app-paso4.js"></script>
+    
+  </head>
+  <body class="bg-gray-100">
+    <main class="max-w-md mx-auto p-6">
+      <!-- mx-auto  si queremos centrar solo de forma orizontal con eje x en todo la pantalla  -->
+      <form action="" id="form" class="flex justify-between">
+        <input
+          id="input-task"
+          type="text"
+          class="w-full border py-2 px-4 rounded-l-md outline-none"
+          placeholder="Escribe el titulo de tu tarea "
+        />
+        <button class="bg-green-400 px-4 rounded-r-md">Crear</button>
+      </form>
+      <!-- aumentamos este span para darle un error asi avisamos
+         al utente que el input esta vacio y que es un error -->
+      <span id= "error" class="text-xs text-red-500 mt-1" ></span>
+
+      <section id="container-tasks" class="mt-10">
+        <!-- <div class="flex justify-between px-4 py-3 bg-white rounded-md">
+          <p>Tarea 1</p>
+          <div class="flex gap-5">
+            <button>✔</button>
+            <button>✏</button>
+            <button>🗑</button>
+          </div>
+        </div> -->
+      </section>
+    </main>   
+      </div>
+    </div>
+  </body>
+</html>
+

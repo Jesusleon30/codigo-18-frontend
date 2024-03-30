@@ -10,6 +10,7 @@
   </head>
   <body class="bg-gray-100">
     <main class="max-w-md mx-auto p-6">
+      <!-- mx-auto  si queremos centrar solo de forma orizontal con eje x en todo la pantalla  -->
       <form action="" id="form" class="flex justify-between">
         <input
           id="input-task"
@@ -17,8 +18,11 @@
           class="w-full border py-2 px-4 rounded-l-md outline-none"
           placeholder="Escribe el titulo de tu tarea "
         />
+        <!-- w-full ocupa todo el espacio -->
         <button class="bg-green-400 px-4 rounded-r-md">Crear</button>
       </form>
+      <!--  los button dentro un formualrio seran siempre submit  -->
+      <!-- envez si creamos fuera del formulario un button sera simplemente un tipo button  -->
       <span id="error" class="text-xs text-red-500 mt-1"></span>
       <section id="container-tasks" class="mt-10"></section>
     </main>
