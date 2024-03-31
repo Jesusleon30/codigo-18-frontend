@@ -23,13 +23,54 @@ ul{
 ul > li {
     position: relative;
     list-style: none;
-    width: 200px;
-    background-color: rgb(52, 58, 92);
-    padding: 10px;
+    width: 150px;
+    background-color: rgb(53, 56, 69);
+    padding: 15px;
+    z-index: var(--i);
 }
+
+/* figlio immediato de li lateral sx */
+ul > li::before{
+    content:''; /* contenido vacio */
+    position: absolute;
+    top: 0;
+    left: -40px; /* a lado sx sin dejar espacio*/
+    width: 40px; 
+    height: 100%;
+    background:rgb(53, 56, 69);
+    transform-origin: right; /*valore di offset*/
+    transform: skewY(45deg);
+    transition: 0.5s; /* aparece dopo pocos segundos */
+}
+
+/* figlio immediato de li sopra */
+ul > li::after{
+    content:''; /* contenido vacio */
+    position: absolute;
+    top: -40px;
+    left: 0; /* a lado sx sin dejar espacio*/
+    width: 100%; 
+    height: 40px;
+    background:rgb(204, 36, 62);
+    transform-origin:bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+  
+
+
+
+
 
 ul > li > a {
     text-decoration: none;
+    color:rgb(112, 200, 211);
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s; /* aparece dopo pocos segundos */
+}
+/* quando me acerco al texto hace efecto */
+ul > li:hover > a {
     color:white;
-
 }
