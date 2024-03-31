@@ -1,0 +1,35 @@
+
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    min-height: 50vh;
+}
+
+ul{
+    position:relative;
+    /* gira las letras tipo 3d */
+    transform: skewY(-15deg);
+}
+
+ul > li {
+    position: relative;
+    list-style: none;
+    width: 200px;
+    background-color: rgb(52, 58, 92);
+    padding: 10px;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color:white;
+
+}
