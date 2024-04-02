@@ -23,7 +23,7 @@ body{
 }
 
 video{
-  width: 100%;
+  width: 90%;
 
 }
 
@@ -32,7 +32,7 @@ h1{
   /* se pone en la mitad del video */
   color: white;
   font-weight: 900;
-  font-size: 12rem;
+  font-size: 2.8rem;
   /* el nombre sobresale el todo el video */
   mix-blend-mode: difference;
   /* fusionamos el video con las letras  */
