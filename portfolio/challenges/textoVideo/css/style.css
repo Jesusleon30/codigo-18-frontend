@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body{
+  
+  height: 100vh;
+
+}
+
+.videoBravo{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* es para que el video que sobre sale asi nose ve */
+  filter:grayscale(100%);
+  /* trasformamos el video en blanco y negro */
+  display: grid;
+  place-items: center ;
+
+}
+
+video{
+  width: 100%;
+
+}
+
+h1{
+  position: absolute;
+  /* se pone en la mitad del video */
+  color: white;
+  font-weight: 900;
+  font-size: 12rem;
+  /* el nombre sobresale el todo el video */
+  mix-blend-mode: difference;
+  /* fusionamos el video con las letras  */
+
+}
