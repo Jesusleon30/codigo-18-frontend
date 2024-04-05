@@ -7,11 +7,18 @@
   padding: 0;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #f00;
+}
+
+
 body {
   font-family: "Raleway", sans-serif;
   background-color: #090e16;
   color: #fff;
 }
+
+
 
 .align-center {
   align-items: center;
