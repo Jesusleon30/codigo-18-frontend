@@ -1,0 +1,91 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: black;
+
+}
+
+.wrapper{
+  display: flex;
+}
+
+.wrapper .sec-texts{
+  height: 32px;
+  line-height: 32px;
+  overflow:hidden ;
+}
+
+.wrapper .first-text{
+  font-size: 20px;
+  color: white;
+}
+
+.sec-texts li {
+  position: relative;
+  top: 0;
+  font-size: 20px;
+  color: #0ef;
+  list-style: none;
+  padding: 0 10px;
+  text-shadow: 0 0 10px #0ef;
+  animation: slide 18s steps(6) infinite, colorful 6s infinite;
+  /*step(6) xk son 6 span*/
+}
+
+@keyframes slide{
+  100%{
+    top: -190px;
+  }
+}
+
+@keyframes colorful {
+  100% {
+    filter: hue-rotate(190deg)
+    /*La hue-rotate()funzione applica una rotazione
+     di colore agli elementi su cui viene applicata.*/
+  }
+}
+
+
+.sec-texts li span {
+  position: relative;
+}
+
+/*Il ::beforeselettore inserisce qualcosa prima
+ del contenuto di ciascuno elemento*/
+.sec-texts li span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 400px;
+  height: 30px;
+  background:black;
+  border-left: 1px solid #0ef;
+  animation: typing 1.5s steps(9) infinite alternate;
+  /*steps()è una funzione di temporizzazione che ci consente di suddividere un'animazione o una transizione
+  in segmenti, anziché una transizione continua da uno stato all'altro*/
+  /*abbiamo diviso l' typing animazione in 10 passaggi 
+  utilizzando la steps()funzione CSS xk la palabra mas larga tiene 31 espacios*/
+
+}
+
+@keyframes typing {
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
+
+  }
+}
+
+

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: black;
+}
+
+.hamburguesa-wrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background:black;
+  box-shadow:
+    0 0 5px #0ef,
+    0 0 10px #0ef,
+    0 0 20px #0ef,
+    0 0 50px #0ef;
+  border-radius: 30px;
+  cursor:pointer;
+  display: flex;
+}
+
+.hamburguesa-icon {
+  position: relative;
+  width: 220px;
+  height: 170px;
+  /* background:#0ef;
+  /* creo un lugar donde moverme con absolut con .hamburguesa-icon dopo */
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.hamburguesa-icon > span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 25px;
+  background: linear-gradient(45deg, #0ef, black);
+  border: 2px solid #0ef;
+  border-radius: 30px;
+  box-shadow:
+    0 0 5px #0ef,
+    0 0 10px #0ef;
+}
+
+.hamburguesa-icon span:nth-child(1){
+  top: 0; /*arriva*/
+  left: 0;/*sx*/
+  width: 50%;
+}
+
+
+.hamburguesa-icon span:nth-child(3){
+  bottom: 0; /* abajo*/
+  right: 0; /*dx*/
+  width: 50%;
+}
