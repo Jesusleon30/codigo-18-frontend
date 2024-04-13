@@ -1,0 +1,16 @@
+
+/* desktop */
+
+@media (min-width: 992px) {
+    .grid-container {
+      display: grid;
+      gap: 1.25rem;
+      grid-template:
+        "header header header" 6.25rem
+        "navbar main sidebar" auto
+        "footer footer footer" 6.25rem/
+        200px auto 200px;
+      /* tres colunnas poniendo / poi  200px(12.5rem) auto 200px; */
+    }
+  }
+  

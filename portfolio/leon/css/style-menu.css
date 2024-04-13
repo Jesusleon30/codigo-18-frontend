@@ -20,7 +20,7 @@
     height: 100%;
     z-index: -1;
     border-bottom: 2px solid rgb(18, 156, 156);
-    border-radius: 15px;
+    border-radius: .9375rem;
     transform: scale(0) translateY(50px);
     opacity: 0; /*Il livello di opacità descrive il livello di trasparenza*/
     /* opacity seria trasparente */

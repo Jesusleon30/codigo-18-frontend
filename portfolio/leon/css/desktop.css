@@ -1,0 +1,19 @@
+
+/* desktop */
+
+@media (min-width: 992px) {
+    .grid-container {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: 100px auto 100px ;
+      /* colunnas  verticales ancho width este caso 2 */
+      grid-template-rows:100px auto 100px ;
+      /* filas altura  height */
+      grid-template-areas:
+        "header header header"
+        "navbar main sidebar"
+        "footer footer footer"
+      /* tres colunnas poniendo / poi  200px(12.5rem) auto 200px; */
+    }
+  }
+  

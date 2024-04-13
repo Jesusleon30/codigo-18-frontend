@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(179, 127, 33);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: mintcream;
+}
+
+/* operador logico and usa estos cambios desde zero pixeles 
+ hasta un maximo de 480px */
+@media screen and (max-width: 480px) {
+  body {
+    background-color: rgb(33, 65, 179);
+  }
+
+  h1 {
+    color: rgb(23, 110, 67);
+  }
+}
+
+/* medidas minimas y maximas que quiero que se hagan los cambios */
+@media screen and (min-width: 480px) and (max-width: 720px) {
+  body {
+    background-color:aqua;
+  }
+
+  h1 {
+    color: rgb(212, 174, 22);
+  }
+}

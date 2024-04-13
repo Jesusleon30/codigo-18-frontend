@@ -1,0 +1,60 @@
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.topheader {
+  box-shadow: 0 0.25rem 0.3125rem var(--navbar-shallow-color);
+  position: fixed;
+  /* fijo que se vea siempre */
+  background-color: var(--theme-color);
+  /* con esto hago que no se m,ueva nada aunque si hago cambios en otras partes  */
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 61.25rem;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  padding: 0 15px;
+  /* ariiva y abajo 0 pixeles y derecha a izquierda .9375rem osea 1.875rem entre ellos */
+}
+
+.menu a {
+  color: var(--text-color);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 3.125rem;
+  /* otro modo de centrar la linea de texto de forma orizontal */
+  text-transform: uppercase;
+  /* maiuscula */
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}

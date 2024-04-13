@@ -1,0 +1,127 @@
+@media (max-width: 950px) {
+  body {
+    background-color: aqua;
+  }
+
+  .menu {
+    /* volvemos el menu de desktop de flex a column */
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: var(--menu-mobile-background-color);
+    height: 50%;
+    overflow-y: auto;
+    /* que me cree un scroll quando mi contenido estee reducido apretado */
+
+    /* opacity: 0.5 */
+    /* hacemos un opacity de 0.5 semi trasparente para centrar las dos imagenes de abrir y cerra menu  */
+    /* 0 nose ve 1 si */
+    opacity: 0;
+    pointer-events: none;
+    /* de esta forma eliminamos por completo xk antes estava solo opaco y si estava ahy la lista de menu
+    en vertical aunq si no lo veamos */
+
+    transition: opacity 0.3s;
+    /* velocidad del opacity */
+  }
+
+  .menu li {
+    padding: 0;
+  }
+
+  .menu a {
+    color: var(--text-color-inverse);
+    line-height: 3.75rem;
+    /* otro modo de centrar la linea de texto de forma orizontal */
+    text-transform: uppercase;
+    /* maiuscula */
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    /* con display block hago que se vea mi contenido en este caso mi imagen  */
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    /* alinear de modo diferente a los demas xk este gia estava centrado al media como los demas */
+    cursor: pointer;
+    padding: 10px 10px;
+  }
+
+  /* vamos a llamar esto para abrir y cerrar menu desde js */
+  .menu_opened {
+    /* le va a cambiar el opacity */
+    opacity: 1;
+    pointer-events: all;
+    /* y se va a ver nuevamente de nuevo todo el menu  */
+  }
+}
+
+@media (max-width: 950px) {
+  body {
+    background-color: aqua;
+  }
+
+  .menu {
+    /* volvemos el menu de desktop de flex a column */
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: var(--menu-mobile-background-color);
+    height: 50%;
+    overflow-y: auto;
+    /* que me cree un scroll quando mi contenido estee reducido apretado */
+
+    /* opacity: 0.5 */
+    /* hacemos un opacity de 0.5 semi trasparente para centrar las dos imagenes de abrir y cerra menu  */
+    /* 0 nose ve 1 si */
+    opacity: 0;
+    pointer-events: none;
+    /* de esta forma eliminamos por completo xk antes estava solo opaco y si estava ahy la lista de menu
+    en vertical aunq si no lo veamos */
+
+    transition: opacity 0.3s;
+    /* velocidad del opacity */
+  }
+
+  .menu li {
+    padding: 0;
+  }
+
+  .menu a {
+    color: var(--text-color-inverse);
+    line-height: 3.75rem;
+    /* otro modo de centrar la linea de texto de forma orizontal */
+    text-transform: uppercase;
+    /* maiuscula */
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    /* con display block hago que se vea mi contenido en este caso mi imagen  */
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    /* alinear de modo diferente a los demas xk este gia estava centrado al media como los demas */
+    cursor: pointer;
+    padding: 10px 10px;
+  }
+
+  /* vamos a llamar esto para abrir y cerrar menu desde js */
+  .menu_opened {
+    /* le va a cambiar el opacity */
+    opacity: 1;
+    pointer-events: all;
+    /* y se va a ver nuevamente de nuevo todo el menu  */
+  }
+}

@@ -1,0 +1,48 @@
+
+body{
+    border:0;
+   text-align: center;
+   margin: 5px;
+   padding: 10px;
+   color: #370617;
+
+   
+}
+
+
+
+Header{
+    width: 100%;
+    height: 10vh;
+    background: yellow;
+}
+
+Nav{
+    width: 100%;
+    height: 10vh;
+    background: orange;
+}
+
+Section{
+    width: 100%;
+    height: 10vh;
+    background: red;
+}
+
+Article{
+    width: 100%;
+    height: 10vh;
+    background: blueviolet;
+}
+
+Aside{
+    width: 100%;
+    height: 10vh;
+    background: blue;
+}
+
+Footer{
+    width: 100%;
+    height: 10vh;
+    background:green;
+}

@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  /* hace respetar la misura que metamos */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2em;
+  min-height: 100vh;
+  padding: .625rem;
+}
+
+.grid-container > * {
+  box-shadow: .625rem .375rem 2.3125rem -0.8125rem rgba(51, 51, 51, 0.7);
+  border-radius: .625rem;
+  padding: .625rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-rows: 6.25rem 3.125rem ;
+  /* width de ogni area */
+  grid-template-areas:
+    "header" 
+    "navbar" 
+    "main" 
+    "sidebar"
+    "footer";
+
+    /* se puede usar anque solo grid-template: */
+
+  .header {
+    grid-area: header;
+    background-color: #8b8ff6;
+  }
+
+  .navbar {
+    grid-area: navbar;
+    /* le ponemos un nombre navbar */
+    background-color: #9137ba;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #2f974b;
+  }
+
+  .main {
+    grid-area: main;
+    background-color: #f3f5f8;
+  }
+
+  .footer {
+    grid-area: footer;
+    background-color: #ba6535;
+  }
+
+}

@@ -1,0 +1,20 @@
+
+
+/* tablet  */
+@media (min-width: 768px) {
+    .grid-container {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: 12.5rem auto;
+      /* colunnas  verticales ancho width este caso 2 */
+      grid-template-rows: 6.25rem 3.125rem auto 6.25rem;
+      /* filas altura  height */
+      grid-template-areas:
+        "header header" 
+        "navbar navbar" 
+        "sidebar main" 
+        "footer footer";
+        
+    }
+  }
+  
