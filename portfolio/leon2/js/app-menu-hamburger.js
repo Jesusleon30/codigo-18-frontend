@@ -15,6 +15,25 @@ openMenuBtn.addEventListener("click", toggleMenu);
 closeMenuBtn.addEventListener("click", toggleMenu);
 
 
+// desde aqui vamos a seleccionar un links qualquiera para salir del buttom Hamburger
+
+
+// quando seleczionemos qualkier elemento que comienze con #
+const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
+
+
+// de esta manera vamos a recorrer todos los elementos del menu y cada vez que le demos a uno de ellos 
+//se va a cerrar el menu que sale hacia adelante y va air donde le dee.
+
+menuLinks.forEach(menuLinks=>{
+    menuLinks.addEventListener("click", function(){
+        menu.classList.remove("menu_opened");
+    })
+})
+
+
+
+
 
 
 

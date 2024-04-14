@@ -1,8 +1,11 @@
-@media (max-width: 950px) {
-  body {
-    background-color: aqua;
-  }
+@media (max-width: 768px) {
 
+
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&display=swap");
+
+ 
   .menu {
     /* volvemos el menu de desktop de flex a column */
     flex-direction: column;
@@ -12,7 +15,7 @@
     width: 100%;
     align-items: center;
     background-color: var(--menu-mobile-background-color);
-    height: 50%;
+    height: 100%;
     overflow-y: auto;
     /* que me cree un scroll quando mi contenido estee reducido apretado */
 
@@ -34,10 +37,9 @@
 
   .menu a {
     color: var(--text-color-inverse);
-    line-height: 3.75rem;
+    line-height: 4.375rem;
     /* otro modo de centrar la linea de texto de forma orizontal */
-    text-transform: uppercase;
-    /* maiuscula */
+    font-size: 1.25em;
   }
 
   .open-menu,
@@ -46,18 +48,85 @@
     /* con display block hago que se vea mi contenido en este caso mi imagen  */
   }
 
+
+  /* vamos a cerrar menu desde aqui para javascript
+  esto en un buttom creado en html desde una imagen */
   .close-menu {
     align-self: flex-end;
     /* alinear de modo diferente a los demas xk este gia estava centrado al media como los demas */
     cursor: pointer;
-    padding: 10px 10px;
+    padding-top: 0.625rem;
+    padding-right: 1.25rem;
   }
 
-  /* vamos a llamar esto para abrir y cerrar menu desde js */
+  /* vamos a llamar esto para abrir menu desde aqui para javascript
+  esto en un buttom creado en html desde una imagen*/
   .menu_opened {
     /* le va a cambiar el opacity */
     opacity: 1;
     pointer-events: all;
     /* y se va a ver nuevamente de nuevo todo el menu  */
+  }
+
+
+  /* dopo el HOMEAA */
+  .menu a::after {
+    content: none;
+  }
+
+  .menu a.selected,
+  .menu a:hover {
+    color: var(--secondary-color);
+  }
+
+  .profile-info {
+    margin-bottom: 1.5625rem;
+  }
+
+  .profile-img {
+    width: 100%;
+    max-width: 300px;
+    /* esto me hara que sera un maximo de 350px osea no crecera mas asi 
+    se cambie el ancho */
+  }
+
+  .profile-title {
+    font-size: 2.1875rem;
+    font-weight: bold;
+    margin: 0;
+    /* al ser un h1 el navegador le agrega un margin in automatico */
+    color: var(--accent-color);
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .profile-details {
+    font-size: 1.125em;
+    font-weight: 500;
+    max-width: 400px;
+    margin: 1.25rem auto;
+  }
+
+  .profile-btn {
+    background-color: var(--accent-color);
+    color: var(--theme-color);
+    border: none;
+    /* por defecto el button mete unos border asi que lo elimino */
+    font-size: 1.25em;
+    padding: 0.5em 1em;
+    border-radius: 0.4375rem;
+    cursor: pointer;
+  }
+
+  .profile-btn:hover {
+    filter: brightness(130%);
+    /* brillo cuando vas al button */
   }
 }
