@@ -1,0 +1,118 @@
+.topheader {
+  box-shadow: var(--navbar-shadow);
+  position: fixed;
+  /* fijo que se vea siempre */
+  background-color: var(--theme-color);
+  /* con esto hago que no se mueva nada aunque si hago cambios en otras partes  */
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  /* sirve para que si alguna imagen es mas grande este no sobresalga   */
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  /* un modo de centrar todo a los costados tipo el around */
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.dark-mode-btn,
+.light-mode-btn{
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* le estamos diciendo que quando tiene light que oculte el button dark-mode-btn */
+:root[data-theme="light"] .dark-mode-btn {
+  display: none;
+}
+
+/* le estamos diciendo que quando tiene dark que oculte el button light-mode-btn */
+:root[data-theme="dark"] .light-mode-btn {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.125em;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin-right: auto;
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  padding: 0 15px;
+  /* ariiva y abajo 0 pixeles y derecha a izquierda 15px osea 30px entre ellos */
+}
+
+.menu a {
+  color: var(--text-color);
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 50px;
+  /* otro modo de centrar la linea de texto de forma orizontal */
+  text-transform: uppercase;
+  /* maiuscula */
+  position: relative;
+}
+
+/* dopo el HOMEAA */
+.menu a::after {
+  content: " ";
+  /* aca en el contenido le podemos meter una imagen o texto que aparecera
+  ejemplo content: "aa"  y vez  que pasa en el texto se aumenta la letra aa es. HOMEAA*/
+  background-color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.25rem);
+  /* calcula asi esta un poco distante el home de la raya de abajo */
+  width: 100%;
+  height: 0.25rem;
+
+  opacity: 0;
+  transition: 0.4s;
+  /* 4 segundos de ritardo  */
+}
+
+/* antes de AAHOME */
+/* .menu a::before{
+  content: " aa";
+  /* aca en el contenido le podemos meter una imagen o texto que aparecera
+  ejemplo content: "aa"  y vez  que pasa en el texto se aumenta la letra AA antes es. AAHOME*/
+/* } */
+
+.menu a.selected::after,
+.menu a:hover::after {
+  opacity: 0.8;
+}
+
+.menu a:hover {
+  color: var(--accent-color);
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}

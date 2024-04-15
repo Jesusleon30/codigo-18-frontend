@@ -1,0 +1,83 @@
+/* variables para cambiar desde aqui en todo el contenido */
+:root{
+  --theme-color: rgb(248, 235, 235);
+  --primary-color: #114d86;
+  --secondary-color: #f9c232;
+  --text-color-inverse: #f6f7f7;
+  --text-color: #131111;
+  --menu-mobile-background-color: #38435f;
+  --accent-color: var(--primary-color);
+  --primary-color-inverse: #010000;
+
+  --navbar-shadow: 0 0.25rem 0.3125rem #e5e5e5;
+
+  --transition: 0.2s ease-in-out;
+  /* una transition morbida */
+
+  color-scheme: light;
+  /* colore para la barra de scroll modalidad clara light */
+}
+
+:root[data-theme="dark"] {
+  --theme-color: #121724;
+  --primary-color: #203141;
+  --secondary-color: #a6c2d4;
+  --text-color-inverse: var(--text-color);
+  --text-color: rgba(255, 255, 255, 0.8);
+  --navbar-shallow-color: #e4e5e5;
+  --menu-mobile-background-color: #17223e;
+
+  --accent-color: var(--secondary-color);
+
+  --navbar-shadow: 0 1px 5px #2f328a;
+
+  color-scheme: dark;
+  /* colore para la barra de scroll modalidad oscura dark */
+}
+
+
+
+* {
+  /* aca hemos dicho cada uno que se haga transition xk todo a la vez no agarra bien el cambio con all */
+  transition: background-color var(--transition), box-shadow var(--transition);
+}
+
+* {
+  box-sizing: border-box;
+  /* hace respetar la misura que metamos */
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* con esto el scroll se mueve mas suave de pagina en pagina */
+}
+
+/* con esto hacemos que la barra nose sovrepongo al texto de donde quiero ir 
+como al home - al about me e cosi via ....*/
+section[id] {
+  scroll-margin-top: 70px;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+  padding-top: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.orizontal-padding {
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+}
+
+.vertical-padding {
+  padding-top: 1.5625rem;
+  padding-bottom: 1.5625rem;
+}

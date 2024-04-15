@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile 3</title>
+
+    <script defer src="./js/localstorage.js"></script>
+
+    <!-- tailwind -->
+    <script src="./tailwind-codigo/tailwind-codigo.txt"></script>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/mobile-experience.css" />
+    <link rel="stylesheet" href="./css/desktop-experience.css" />
+
+    <!-- javascript -->
+    <script defer src="./js/colorThema.js"></script>
+    <script defer src="./js/app-menu-hamburger.js"></script>
+  </head>
+  <body class="grid-container">
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img
+            width="50"
+            height="50"
+            src="./assets/icons/leone5.png"
+            alt="icone leone"
+          />
+          <div>
+            <p>Leon</p>
+            <p>{code}</p>
+          </div>
+        </a>
+        <ul class="menu">
+          <button class="close-menu" aria-label="cerrar menu">
+            <img
+              width="50"
+              height="50"
+              src="./assets/icons/github2.png"
+              alt="cerrar menu"
+            />
+          </button>
+          <li>
+            <a href="#Home" class="selected">Home</a>
+            <!-- para ir donde la parte de home tengo que crear 
+             href="#home"  asi se hace click ahy y te lleva a la parte deceada
+            le tenemos que crear un id tambien-->
+          </li>
+          <li>
+            <a href="#About me">About Me</a>
+          </li>
+          <li>
+            <a href="#Portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#Skills">Skills</a>
+          </li>
+          <li>
+            <a href="#Contact">Contact</a>
+          </li>
+          <span></span>
+        </ul>
+        <button class="dark-mode-btn" aria-label="activa modo oscuro">
+          <img width="50" height="50" src="./assets/icons/ligth.png" alt="" />
+        </button>
+        <button class="light-mode-btn" aria-label="activa modo claro">
+          <img width="50" height="50" src="./assets/icons/dark3.png" alt="" />
+        </button>
+
+        <button class="open-menu" aria-label="abrir menu">
+          <img
+            width="50"
+            height="50"
+            src="./assets/icons/ai2.png"
+            alt="abrir menu"
+          />
+        </button>
+      </nav>
+    </header>
+    <div class="orizontal-padding vertical-padding">
+      <section class="profile" id="Home">
+        <div class="profile-info">
+          <h1 class="profile-title">Hello, I'm</h1>
+          <h1 class="profile-title">Jesus Hugo</h1>
+          <h1 class="profile-title">Retamozo Leon</h1>
+          <p class="profile-details">
+            Sono un appassionato dell'automazione e mi piace essere aggiornato
+            con le nuove tecnologie ed imparare
+          </p>
+          <button class="profile-btn">scaricare cv</button>
+        </div>
+        <div class="profile-img-section">
+          <img
+            src="./assets/images/images-mobile/Jesus1.png"
+            alt="Hugo Leon"
+            class="profile-img"
+          />
+        </div>
+      </section>
+    </div>
+    <section class="experiences" id="About me">
+      <div>
+        <img src="./assets/icons/wave.png" alt="division" class="wave" />
+      </div>
+      <div class="experiences-body">
+        <h2 class="experiences-title">ABOUT ME</h2>
+        <div class="experiences-grid">
+          <div class="caja-vacia"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <div class="experience-date">2023-2024</div>
+            <div class="experience-company">Alfa Robotica</div>
+            <div class="experience-position">Tecnico Meccanico - Elettrico</div>
+            <div class="experience-description">
+              Installatore e manutentore di isole robotizzate ABB
+            </div>
+          </div>
+          <div class="experience experience-right">
+            <div class="experience-date">2023-2024</div>
+            <div class="experience-company">Alfa Robotica</div>
+            <div class="experience-position">Tecnico Meccanico - Elettrico</div>
+            <div class="experience-description">
+              Installatore e manutentore di isole robotizzate ABB
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="caja-vacia"></div>
+          <div class="caja-vacia"></div>
+          <div class="line"></div>
+          <div class="experience">
+            <div class="experience-date">2023-2024</div>
+            <div class="experience-company">Alfa Robotica</div>
+            <div class="experience-position">Tecnico Meccanico - Elettrico</div>
+            <div class="experience-description">
+              Installatore e manutentore di isole robotizzate ABB
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/icons/wave.png" alt="" class="wave-bottom" />
+      </div>
+    </section>
+    <div id="Skills">SKILLS</div>
+    <div>los tipos de lenguagues de programacion</div>
+
+    <section class="contact vertical-padding" id="Contact">
+      <h2 class="contact-title">Contacto</h2>
+    </section>
+  </body>
+</html>

@@ -1,15 +1,17 @@
-const ligthModeBtn = document.querySelector(".light-mode-btn");
+const lightModeBtn = document.querySelector(".light-mode-btn");
 const darkModeBtn = document.querySelector(".dark-mode-btn");
 
-
-
-
-
-
-ligthModeBtn.addEventListener("click",setDarkMode);
-darkModeBtn.addEventListener("click",setLigthMode);
-
+lightModeBtn.addEventListener("click", setDarkMode);
+darkModeBtn.addEventListener("click", setLightMode);
 
 function setDarkMode() {
-    setUserTheme("dark")
+  setUserTheme("dark");
+}
+
+function setLightMode() {
+  setUserTheme("light");
+}
+
+function setUserTheme(newTheme) {
+  document.documentElement.setAttribute("data-theme", newTheme);
 }

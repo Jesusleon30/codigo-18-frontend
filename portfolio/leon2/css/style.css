@@ -1,5 +1,5 @@
 /* variables para cambiar desde aqui en todo el contenido */
-:root {
+:root{
   --theme-color: rgb(248, 235, 235);
   --primary-color: #114d86;
   --secondary-color: #f9c232;
@@ -15,10 +15,10 @@
   /* una transition morbida */
 
   color-scheme: light;
-  /* colore para la barra de scroll modalidad clara ligth */
+  /* colore para la barra de scroll modalidad clara light */
 }
 
-:root [data-theme="dark"] {
+:root[data-theme="dark"] {
   --theme-color: #121724;
   --primary-color: #203141;
   --secondary-color: #a6c2d4;

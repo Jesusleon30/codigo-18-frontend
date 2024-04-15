@@ -1,0 +1,126 @@
+@media (min-width: 59.375rem) {
+
+
+
+  .experiences {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experiences-body {
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+  }
+
+  .wave {
+    width: 100%;
+    position: relative;
+    top: 2px;
+    transform: scaleY(-1);
+    /* al contrario la imagen */
+  }
+
+  .wave-bottom {
+    width: 100%;
+    top: -2px;
+    /* para eliminasr los espacios */
+  }
+
+  .experiences-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.875em;
+    margin: 25px;
+  }
+
+  .experience-date {
+    font-size: 1.5625em;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+
+  .experience-company {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    margin-top: .3125rem;
+  }
+
+  .experience-position {
+    font-weight: 500;
+    font-size: 1.125em;
+    margin-top: 20px;
+  }
+
+  .experience-description {
+    font-weight: 400;
+    font-size: 0.9375em;
+    margin-top: 10px;
+  }
+
+  .experience {
+    padding: 0px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+
+  .experience-right{
+    text-align: right;
+  }
+
+  .experiences-grid{
+    display: grid;
+    grid-template-columns:  auto 2px auto;
+    gap: 1.25rem 4.375rem;
+    padding: 4.375rem;
+    justify-content: center;
+  }
+
+  .line{
+    background-color: var(--text-color-inverse);
+    position: relative;
+  }
+
+  .line::before,
+  .line::after{
+    content: "";
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: var(--text-color-inverse);
+    border-radius: 50%;
+    position: absolute;
+    top: -1.25rem;
+    left: -0.5625rem;
+
+  }
+
+  .line::after{
+    top: 100%;
+    z-index: 1;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

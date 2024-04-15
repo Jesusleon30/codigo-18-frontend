@@ -1,0 +1,63 @@
+@media (max-width: 768px) {
+  .experiences {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experiences-body {
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+  }
+
+  .wave {
+    width: 100%;
+    position: relative;
+    top: 0.125rem;
+    transform: scaleY(-1);
+    /* al contrario la imagen */
+  }
+
+  .wave-bottom {
+    width: 100%;
+    top: -0.125rem;
+    /* para eliminasr los espacios */
+  }
+
+  .experiences-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.875em;
+    margin: 1.5625rem;
+  }
+
+  .experience-date {
+    font-size: 1.5625em;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+
+  .experience-company {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+
+  .experience-position {
+    font-weight: 500;
+    font-size: 1.125em;
+    margin-top: 1.25rem;
+  }
+
+  .experience-description {
+    font-weight: 400;
+    font-size: 0.9375em;
+    margin-top: 0.625rem;
+  }
+
+  .experience {
+    padding: 1.5625rem;
+    max-width: 31.25rem;
+    margin: 0 auto;
+  }
+}
