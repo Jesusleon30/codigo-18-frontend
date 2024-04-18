@@ -1,3 +1,6 @@
+
+
+
 const menu = document.querySelector(".menu");
 const openMenuBtn = document.querySelector(".open-menu");
 const closeMenuBtn = document.querySelector(".close-menu");
@@ -30,15 +33,6 @@ menuLinks.forEach(menuLinks=>{
         menu.classList.remove("menu_opened");
     })
 })
-
-
-
-
-
-
-
-
-
 
 
 

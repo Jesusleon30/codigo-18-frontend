@@ -1,0 +1,57 @@
+
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1em;
+  min-height: 200vh;
+  padding: 0px;
+}
+
+/* .grid-container > * {
+  box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.7);
+  border-radius: 0px;
+  padding: 0px;
+  text-align: center;
+  font-weight: 500;
+} */
+
+.grid-container {
+  display: grid;
+  gap: 0px;
+  grid-template-rows: 70px auto 40px 100px ;
+  /* width de ogni area */
+  grid-template-areas:
+    "navbar" 
+    "main" 
+    "sidebar"
+    "footer";
+
+    /* se puede usar anque solo grid-template: */
+
+
+  .container-navbar {
+    grid-area: navbar;
+    /* le ponemos un nombre navbar */
+    /* background-color: #9137ba; */
+    position: fixed;
+      /* un modo de centrar todo a los costados tipo el around */
+      width:100%;
+
+  }
+
+  .container-sidebar {
+    grid-area: sidebar;
+    background-color: #2f974b;
+  }
+
+  .container-main {
+    grid-area: main;
+    /* background-color: #51d76b; */
+  }
+
+  .container-footer {
+    grid-area: footer;
+    background-color: #ba6535;
+  }
+
+}

@@ -1,4 +1,4 @@
-@media (min-width: 59.375rem) {
+@media (min-width: 950px) {
 
 
 
@@ -15,14 +15,81 @@
   .wave {
     width: 100%;
     position: relative;
-    top: 2px;
+    top: .125rem;@media (min-width: 59.375rem) {
+
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&display=swap");
+    
+      .orizontal-padding{
+        padding-left:70px;
+        padding-right: 70px;
+      }
+      
+      .vertical-padding{
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+    
+    
+      .profile-info {
+        margin-bottom: 0px;
+      }
+    
+      .profile-img {
+        width: 100%;
+        max-width: 21.875rem;
+        /* esto me hara que sera un maximo de 21.875rem osea no crecera mas asi 
+        se cambie el ancho */
+        /* transform: scalex(-1); */
+        /* cambia de mirada orizontal al contraio */
+      }
+    
+      .profile {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* centrar modificar el max-width para ver el efecto */
+        max-width: 90%;
+        margin: 0 auto;
+        /* 0 su e giu 
+        auto dx e sx */
+      }
+    
+      .profile-title {
+        font-size: 60px;
+        color: var(--accent-color);
+      }
+    
+      .profile-details {
+        font-size: 1.5625em;
+        font-weight: 500;
+        max-width: 450px;
+        margin: 1.875rem 0;
+      }
+    
+      .profile-btn {
+        background-color: var(--accent-color);
+        color: var(--theme-color);
+        border: none;
+        /* por defecto el button mete unos border asi que lo elimino */
+        font-size: 28px;
+        padding: 0.5em 1em;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+    
+      .profile-btn:hover {
+        filter: brightness(130%);
+      }
+    }
+    
     transform: scaleY(-1);
     /* al contrario la imagen */
   }
 
   .wave-bottom {
     width: 100%;
-    top: -2px;
+    top: -0.125rem;
     /* para eliminasr los espacios */
   }
 
@@ -31,7 +98,7 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.875em;
-    margin: 25px;
+    margin: 1.5625rem;
   }
 
   .experience-date {
@@ -43,24 +110,24 @@
   .experience-company {
     font-size: 1.25em;
     text-transform: uppercase;
-    margin-top: .3125rem;
+    margin-top: 5px;
   }
 
   .experience-position {
     font-weight: 500;
     font-size: 1.125em;
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 
   .experience-description {
     font-weight: 400;
     font-size: 0.9375em;
-    margin-top: 10px;
+    margin-top: .625rem;
   }
 
   .experience {
-    padding: 0px;
-    max-width: 500px;
+    padding: 0rem;
+    max-width: 31.25rem;
     margin: 0 auto;
   }
 
@@ -71,9 +138,9 @@
 
   .experiences-grid{
     display: grid;
-    grid-template-columns:  auto 2px auto;
-    gap: 1.25rem 4.375rem;
-    padding: 4.375rem;
+    grid-template-columns:  auto .125rem auto;
+    gap: 20px 70px;
+    padding: 70px;
     justify-content: center;
   }
 
@@ -86,13 +153,13 @@
   .line::after{
     content: "";
     display: block;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 20px;
+    height: 20px;
     background-color: var(--text-color-inverse);
     border-radius: 50%;
     position: absolute;
-    top: -1.25rem;
-    left: -0.5625rem;
+    top: -20px;
+    left: -9px;
 
   }
 

@@ -4,12 +4,12 @@
   --primary-color: #114d86;
   --secondary-color: #f9c232;
   --text-color-inverse: #f6f7f7;
-  --text-color: #131111;
+  --text-color: #111111;
   --menu-mobile-background-color: #38435f;
   --accent-color: var(--primary-color);
   --primary-color-inverse: #010000;
 
-  --navbar-shadow: 0 0.25rem 0.3125rem #e5e5e5;
+  --navbar-shadow: 0 1px 5px #e5e5e5;
 
   --transition: 0.2s ease-in-out;
   /* una transition morbida */
@@ -46,7 +46,7 @@
   box-sizing: border-box;
   /* hace respetar la misura que metamos */
   margin: 0;
-  padding: 0;
+  padding:0;
 }
 
 html {
@@ -64,20 +64,11 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: var(--theme-color);
   color: var(--text-color);
-  padding-top: 70px;
+  /* padding-top: 70px; */ 
+  /* esto es para el navbar */
 }
 
 a {
   text-decoration: none;
   color: var(--text-color);
-}
-
-.orizontal-padding {
-  padding-left: 1.5625rem;
-  padding-right: 1.5625rem;
-}
-
-.vertical-padding {
-  padding-top: 1.5625rem;
-  padding-bottom: 1.5625rem;
 }

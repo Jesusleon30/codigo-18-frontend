@@ -1,3 +1,4 @@
+
 const validateTasksFromLocalStorage = localStorage.getItem("tasks");
 
 export let tasks = validateTasksFromLocalStorage

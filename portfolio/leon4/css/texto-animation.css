@@ -1,0 +1,79 @@
+
+.wrapper{
+  display: flex;
+}
+
+.wrapper .sec-texts{
+  height: 32px;
+  line-height: 32px;
+  overflow:hidden ;
+}
+
+.wrapper .first-text{
+  font-size: 1.5625em;
+  color: rgb(0, 0, 0 0.2);
+}
+
+
+
+.sec-texts li {
+  position: relative;
+  top: 0;
+  font-size: 1.5625em;
+  color: #0ef;
+  list-style: none;
+  padding: 0 12px;
+  text-shadow: 0 0 10px #0ef;
+  animation: slide 18s steps(6) infinite, colorful 6s infinite;
+  /*step(6) xk son 6 span*/
+
+
+}
+
+@keyframes slide{
+  100%{
+    top: -190px;
+  }
+}
+
+@keyframes colorful {
+  100% {
+    filter: hue-rotate(190deg)
+    /*La hue-rotate()funzione applica una rotazione
+     di colore agli elementi su cui viene applicata.*/
+  }
+}
+
+
+.sec-texts li span {
+  position: relative;
+}
+
+/*Il ::beforeselettore inserisce qualcosa prima
+ del contenuto di ciascuno elemento*/
+.sec-texts li span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 500px;
+  height: 1px;
+  bottom: 1px;
+  /* background:rgb(0, 0, 0, 0.8); */
+  border-left: 10px solid #0ef;
+  animation: typing 1.5s steps(9) infinite alternate;
+  /*steps()è una funzione di temporizzazione che ci consente di suddividere un'animazione o una transizione
+  in segmenti, anziché una transizione continua da uno stato all'altro*/
+  /*abbiamo diviso l' typing animazione in 10 passaggi 
+  utilizzando la steps()funzione CSS xk la palabra mas larga tiene 31 espacios*/
+
+}
+
+@keyframes typing {
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
+
+  }
+}
+
+

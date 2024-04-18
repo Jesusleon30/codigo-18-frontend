@@ -9,7 +9,7 @@
   --accent-color: var(--primary-color);
   --primary-color-inverse: #010000;
 
-  --navbar-shadow: 0 0.25rem 0.3125rem #e5e5e5;
+  --navbar-shadow: 0 4px 5px #e5e5e5;
 
   --transition: 0.2s ease-in-out;
   /* una transition morbida */
@@ -29,7 +29,7 @@
 
   --accent-color: var(--secondary-color);
 
-  --navbar-shadow: 0 1px 5px #2f328a;
+  --navbar-shadow: 0 .0625rem .3125rem #2f328a;
 
   color-scheme: dark;
   /* colore para la barra de scroll modalidad oscura dark */
@@ -57,14 +57,14 @@ html {
 /* con esto hacemos que la barra nose sovrepongo al texto de donde quiero ir 
 como al home - al about me e cosi via ....*/
 section[id] {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 4.375rem;
 }
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: var(--theme-color);
   color: var(--text-color);
-  padding-top: 70px;
+  padding-top: 4.375rem;
 }
 
 a {
@@ -73,11 +73,11 @@ a {
 }
 
 .orizontal-padding {
-  padding-left: 1.5625rem;
-  padding-right: 1.5625rem;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .vertical-padding {
-  padding-top: 1.5625rem;
-  padding-bottom: 1.5625rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
