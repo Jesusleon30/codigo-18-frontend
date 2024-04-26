@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { createUser } from "../../services/firebase";
+import { createUser } from "../../services/auth";
+import { Link } from "react-router-dom";
+import { TextField } from "../../components";
 
 export default function Login() {
   const [values, setValues] = useState({
@@ -22,32 +24,26 @@ export default function Login() {
 
   return (
     <>
-      <section className="max-w-md m-auto flex items-center justify-center h-[100vh]">
+      <section className="max-w-md m-auto flex flex-col items-center justify-center h-[100vh]">
         <div className="bg-white p-6 rounded-md w-full md:w-md">
           <div className="my-5">
             <h2 className="text-center text-2xl font-bold">👋 Hola de nuevo</h2>
           </div>
           <form className="my-5" onSubmit={handleSubmit}>
-            <div className="my-5">
-              <input
-                type="email"
-                name="email"
-                value={values.email}
-                onChange={handleInputChange}
-                placeholder="Ingrese su correo"
-                className="px-3 py-2 rounded-md border outline-none w-full"
-              />
-            </div>
-            <div className="my-5">
-              <input
-                type="password"
-                name="password"
-                value={values.password}
-                onChange={handleInputChange}
-                placeholder="Ingrese su password"
-                className="px-3 py-2 rounded-md border outline-none w-full"
-              />
-            </div>
+            <TextField
+              type="email"
+              name="email"
+              value={values.email}
+              onChange={handleInputChange}
+              placeholder="Ingrese su correo"
+            />
+            <TextField
+              type="password"
+              name="password"
+              value={values.password}
+              onChange={handleInputChange}
+              placeholder="Ingrese su password"
+            />
             <div className="my-5">
               <button
                 className="border border-green-400 text-black font-bold w-full px-3 py-2 rounded-md
@@ -57,6 +53,14 @@ export default function Login() {
               </button>
             </div>
           </form>
+        </div>
+        <div className="text-center mt-5">
+          <p className="text-sm">
+            ¿No tienes una cuenta?{" "}
+            <Link className="underline" to={"/sign-up"}>
+              Regístrate
+            </Link>
+          </p>
         </div>
       </section>
     </>

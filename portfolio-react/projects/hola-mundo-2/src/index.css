@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  background: #222;
+  font-family: system-ui;
+}
+
+/* {
+    display:grid;
+    place-content: center;
+    min-height: 100vh;
+    color:white;
+} */
+
