@@ -1,10 +1,5 @@
 @media (max-width: 768px) {
 
-
-
-
-  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&display=swap");
-
  
   .menu {
     /* volvemos el menu de desktop de flex a column */
