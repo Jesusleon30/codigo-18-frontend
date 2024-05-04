@@ -1,9 +1,9 @@
-import { FooterUno } from "../componenti";
+import { FooterTotal } from "../componenti";
 
 export default function Footer() {
   return (
     <>
-      <FooterUno />
+      <FooterTotal />
     </>
   );
 }

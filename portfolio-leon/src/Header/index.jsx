@@ -1,11 +1,10 @@
-import { HeaderUno } from "../componenti";
-import { HeaderDue } from "../componenti"
+
+import { HeaderTotal } from "../componenti";
  
 export default function Header() {
   return (
     <>
-      <HeaderUno />
-      {/* <HeaderDue /> */}
+      <HeaderTotal />
     </>
   );
 }

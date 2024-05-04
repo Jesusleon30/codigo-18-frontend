@@ -1,9 +1,9 @@
-import { MainUno } from "../componenti";
+import { MainTotal } from "../componenti";
 
 export default function Main() {
   return (
     <>
-      <MainUno />
+      <MainTotal />
     </>
   );
 }

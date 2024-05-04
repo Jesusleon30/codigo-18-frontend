@@ -1,18 +1,10 @@
-import "./css/index.css";
+import { HeaderUno, HeaderDue } from "./components";
 
-export default function HeaderUno() {
+export default function HeaderTotal() {
   return (
     <>
-      <section className="bg-fixed flex justify-between p-1  items-center w-full h-20 bg-gray-900 ">
+      <HeaderUno title2=" < Code > ">
         <div>
-          <button>
-            <img
-              className="h-[80px] w-[80px]"
-              src="./assets/iconsLogo/leone5.png"
-              alt=""
-            />
-          </button>
-        </div>
         <div>
           <div className=" hidden  navbar  md:flex md:justify-center md:items-center ">
             <a className="a-navbar" href="#Home">
@@ -33,16 +25,8 @@ export default function HeaderUno() {
             <span className="span-navbar"></span>
           </div>
         </div>
-        <div>
-          <button>
-            <img
-              className="h-[80px] w-[80px]"
-              src="./assets/iconsLogo/leone6.png"
-              alt=""
-            />
-          </button>
         </div>
-      </section>
+        </HeaderUno>
     </>
   );
 }

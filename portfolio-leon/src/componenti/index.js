@@ -1,4 +1,3 @@
-export { default as HeaderUno } from "./HeaderUno";
-export { default as HeaderDue } from "./HeaderDue";
-export { default as MainUno } from "./MainUno";
-export { default as FooterUno } from "./FooterUno";
+export { default as HeaderTotal} from "./HeaderTotal";
+export { default as MainTotal } from "./MainTotal";
+export { default as FooterTotal } from "./FooterTotal";

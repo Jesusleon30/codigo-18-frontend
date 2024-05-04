@@ -1,3 +1,7 @@
+.colorfondo {
+  background: rgba(15, 115, 238, 0.2);
+}
+
 .navbar > .a-navbar {
   position: relative;
   font-size: 1.1em;
@@ -19,7 +23,7 @@
   color: aqua;
 }
 
-.navbar > .a-navbar  > .span-navbar {
+.navbar > .a-navbar > .span-navbar {
   position: absolute;
   top: 0;
   left: 0;
