@@ -8,8 +8,6 @@ import userImg5 from "../../../../../public/assets/desktop/progettazione_meccani
 import userImg6 from "../../../../../public/assets/desktop/progetto-3d.jpg";
 import userImg8 from "../../../../../public/assets/varieImmagini/developerdesk.jpg";
 
-
-
 const users = [
   {
     id: 0,
@@ -62,15 +60,27 @@ const users = [
 ];
 
 export default function Lista() {
+  const handleClick = (name) => {
+    console.log(`cartella ${name}`);
+  };
+
   return (
     <section className="section-lista">
-      {users.map((user) => {
+      {users.map(({ id, name, description, image }) => {
         return (
-          <div className="card-lista m-2 gap-2" key={user.id}>
-            <img className="image-lista" src={user.image} alt={user.name} />
-            <h2 className="name-lista text-2xl">{user.name}</h2>
-            <p className="description-lista">{user.description}</p>
-            <button className="text-white open">Open</button>
+          <div className="card-lista m-2 gap-2" key={id}>
+            <img className="image-lista" src={image} alt={name} />
+            <h2 className="name-lista text-2xl">{name}</h2>
+            <p className="description-lista">{description}</p>
+            <button
+              id={id}
+              onClick={() => handleClick(name)}
+              className="text-white open"
+            >
+              
+            </button>
+            {/* si le paso solo handleClick haciendo un click en el button  me va a dar en la console un open y asi por todas las veces que le demos click al button 
+        envez si le hago handleclick () con parentesis me pasa toda la function en este caso me 8 open (xk son 8 button que tenemos) si aver cliccado */}
           </div>
         );
       })}

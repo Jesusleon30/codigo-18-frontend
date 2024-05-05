@@ -3,7 +3,7 @@ import "./css/index.css";
 export default function HeaderUno({children, title2}) {
   return (
     <>
-      <section className=" flex justify-between p-1  items-center w-full h-20 colorfondo ">
+      <section className=" flex  justify-between p-1  items-center w-full h-20 colorfondo ">
         {/* es de poner fixed pero tengo que ver los espacios */}
         <div>
           <button>

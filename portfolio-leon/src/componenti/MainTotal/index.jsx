@@ -1,10 +1,10 @@
-import { Logo, TextAnimation, Lista } from "./components";
+import { Logo, TextAnimation, Lista, Contador, Pokedex } from "./components";
 
 export default function MainTotal() {
   return (
     <>
       <TextAnimation
-        className="m-[80px]"
+        className="m-[80px] "
         title1="👋 Hi! I'm Jesus Hugo Retamozo Leon"
       />
 
@@ -17,6 +17,7 @@ export default function MainTotal() {
         </a>
       </div>
       <Lista />
+      <Contador />
       <Logo />
     </>
   );

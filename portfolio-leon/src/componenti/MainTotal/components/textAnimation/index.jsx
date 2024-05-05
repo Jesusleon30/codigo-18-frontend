@@ -5,7 +5,7 @@ export default function TextAnimation({ title1 }) {
   return (
     <>
       <section
-        className=" text-center  
+        className=" text-center mt-[80px]
       md:flex  md:items-center md:justify-center md:p-5"
       >
         <div>
