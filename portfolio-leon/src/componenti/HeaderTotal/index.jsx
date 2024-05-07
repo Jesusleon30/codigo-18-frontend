@@ -1,4 +1,5 @@
 import { HeaderUno, HeaderDue } from "./components";
+import { Link } from "react-router-dom";
 
 export default function HeaderTotal() {
   return (
