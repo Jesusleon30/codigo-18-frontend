@@ -1,3 +1,8 @@
-h3{
-    color:aquamarine
+.text{
+    color:rgb(52, 212, 159);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+
 }

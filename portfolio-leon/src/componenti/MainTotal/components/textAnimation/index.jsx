@@ -1,7 +1,19 @@
+import { useState } from "react";
 import { Children } from "react";
 import "./css/index.css";
 
 export default function TextAnimation({ title1 }) {
+  const [imagen1, setImagen1] = useState("./assets/icons/Jesus.png");
+
+  function handleimages() {
+    setImagen1("./assets/varieImmagini/jesusavatar1.png")
+  }
+
+
+
+
+
+
   return (
     <>
       <section
@@ -62,8 +74,9 @@ export default function TextAnimation({ title1 }) {
         <div>
           <img
             className="hidden md:block md:h-[350px] md:w-[380px]  md:bg-cover rounded-[20%]"
-            src="./assets/icons/Jesus.png"
+            src={imagen1}
             alt=""
+            onClick={handleimages}
           />
         </div>
       </section>

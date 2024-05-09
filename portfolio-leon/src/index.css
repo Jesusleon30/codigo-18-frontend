@@ -10,11 +10,5 @@ body {
   box-sizing: border-box;
   /* calcula los pixeles metidos en automatico */
   background-color: rgb(11, 6, 26);
-  
-}
-
-html {
-  scroll-behavior: smooth;
-  /* con esto el scroll se mueve mas suave de pagina en pagina */
 }
 

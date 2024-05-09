@@ -8,7 +8,7 @@ export default function MainTotal() {
         title1="👋 Hi! I'm Jesus Hugo Retamozo Leon"
       />
 
-      <div>
+      <div id="Skills">
         <a
           className="text-5xl text-blue-300 font-semibold flex items-center justify-center"
           href="#Skills"

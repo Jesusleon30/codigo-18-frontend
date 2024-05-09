@@ -11,7 +11,7 @@ export default function Contador() {
   };
 
   return (
-    <div
+    <div id="Contact"
       className="app mt-9 flex md:justify-center items-center"
       style={{ backgroundColor }}
     >
