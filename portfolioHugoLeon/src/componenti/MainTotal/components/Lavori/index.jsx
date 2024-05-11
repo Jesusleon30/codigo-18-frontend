@@ -4,8 +4,8 @@ export default function Lavori() {
   return (
     <>
       <div >
-        <div className="flex gap-4 justify-center items-center">
-        <section className="profilo">
+        <div className="flex gap-4 justify-center items-center flex-wrap ">
+        <section className="profilo ">
           <div className="div-profilo text flex flex-col">
             <p className=" text-xl">siti rapidi</p>
 
@@ -46,8 +46,8 @@ export default function Lavori() {
           </div>
         </section>
 
-        <section className="profilo">
-          <div className="div-profilo text flex flex-col">
+        <section className="profilo flex-wrap">
+          <div className="div-profilo text flex flex-col ">
             <p className=" text-xl">siti rapidi</p>
 
             <ul>
@@ -89,7 +89,7 @@ export default function Lavori() {
 
       </div>
 
-        <div className="flex gap-4 justify-center items-center" >
+        <div className="flex gap-4 justify-center items-center flex-wrap" >
         <section className="profilo">
           <div className="div-profilo text flex flex-col">
             <p className=" text-xl">HTML - CSS</p>

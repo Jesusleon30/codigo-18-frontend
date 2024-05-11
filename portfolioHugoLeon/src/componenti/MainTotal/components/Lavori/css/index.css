@@ -23,6 +23,8 @@
     /* centra de forma vertical */
     justify-content: center;
     /* centra de forma orizzontale */
+    flex-wrap: wrap;
+   
 }
 
 
