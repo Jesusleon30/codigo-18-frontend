@@ -23,7 +23,7 @@ export default function FooterUno(props) {
         <div>Jesus Hugo Retamozo Leon</div>
         <div>Automation and Robotic</div>
         <div>2024</div>
-        <div className="img-footer">
+        <div className="img-footer m-3">
           <div>
             <a
               href="https://github.com/Jesusleon30/codigo-18-frontend">

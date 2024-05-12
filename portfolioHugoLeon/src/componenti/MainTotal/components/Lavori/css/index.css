@@ -75,7 +75,7 @@ ul > li > a {
 
 /* el elemento a tiene un stilo llamado hover, en este caso para cambiar de efecto 
 le metemos un color apenas entre el mouse dentro de a */
-a:hover {
+.a-container-profilo:hover {
     /* ahora cada vez que valla con el mouse ad a se cambiara el sfondo y el color del texto */
 
     background-color: rgb(222, 156, 70);

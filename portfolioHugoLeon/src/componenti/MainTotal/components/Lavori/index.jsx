@@ -11,7 +11,7 @@ export default function Lavori() {
 
               <ul>
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/portfolio-html-css-js/challenges/textoAnimation/index.html"
                     target="_blank"
                   >
@@ -20,7 +20,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/portfolio-html-css-js/challenges/testoVideobg/index.html"
                     target="_blank"
                   >
@@ -29,7 +29,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/portfolio-html-css-js/challenges/menu/scatolaMenu/index.html"
                     target="_blank"
                   >
@@ -38,7 +38,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/portfolio-html-css-js/challenges/menu/menu-mobile-hamburger-css-js/index.html"
                     target="_blank"
                   >
@@ -47,7 +47,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/portfolio-html-css-js/challenges/galleria1/index.html"
                     target="_blank"
                   >
@@ -64,13 +64,13 @@ export default function Lavori() {
 
               <ul>
                 <li>
-                  <a href="https://Github.com/" target="_blank">
+                  <a className=" a-container-profilo" href="https://Github.com/" target="_blank">
                     GitHub
                   </a>
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://tecsup.instructure.com/login/canvas"
                     target="_blank"
                   >
@@ -79,19 +79,19 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a href="https://www.youtube.com/" target="_blank">
+                  <a className=" a-container-profilo" href="https://www.youtube.com/" target="_blank">
                     Youtube
                   </a>
                 </li>
 
                 <li>
-                  <a href="http://google.com" target="_blank">
+                  <a className=" a-container-profilo" href="http://google.com" target="_blank">
                     Google
                   </a>
                 </li>
 
                 <li>
-                  <a href="https://translate.google.it/" target="_blank">
+                  <a className=" a-container-profilo" href="https://translate.google.it/" target="_blank">
                     Traduttore Google
                   </a>
                 </li>
@@ -107,7 +107,7 @@ export default function Lavori() {
 
               <ul>
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                    className="a-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/semana1/challenges/profilo1/index.html"
                     target="_blank"
@@ -117,7 +117,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/semana1/challenges/profilo2/index.html"
                     target="_blank"
                   >
@@ -126,7 +126,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/semana2/challenges/tip-calculator/index.html"
                     target="_blank"
                   >
@@ -135,7 +135,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/semana3/challenges/multi-step-form/index.html"
                     target="_blank"
                   >
@@ -144,7 +144,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/semana3/challenges/sunnyside/index.html"
                     target="_blank"
                   >
@@ -160,7 +160,7 @@ export default function Lavori() {
 
               <ul>
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/semana4/challenges/e-commerce-tailwind/index.html"
                     target="_blank"
                   >
@@ -169,7 +169,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/semana4/challenges/spotify/index.html"
                     target="_blank"
                   >
@@ -178,7 +178,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/semana4/challenges/testimonials/index.html"
                     target="_blank"
                   >
@@ -187,7 +187,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="semana5/challenges/bootstrap/index.html"
                     target="_blank"
                   >
@@ -196,7 +196,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/semana5/challenges/instagram/index.html"
                     target="_blank"
                   >
@@ -214,7 +214,7 @@ export default function Lavori() {
 
               <ul>
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/semana7/login/"
                     target="_blank"
                   >
@@ -223,7 +223,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/semana7/tip-calculator/index.html"
                     target="_blank"
                   >
@@ -232,7 +232,7 @@ export default function Lavori() {
                 </li>
 
                 <li>
-                  <a
+                  <a className=" a-container-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/semana8/index.html"
                     target="_blank"
                   >
