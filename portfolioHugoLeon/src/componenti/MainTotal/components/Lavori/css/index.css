@@ -1,67 +1,45 @@
-.text-lavoro{
+.text{
     color:aliceblue;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:20px;
+    
 }
 
-
-
-
-
-
-.profilo{
-    height: 100vh;
-    /* altura en forma vertical de una pantalla entera */
-
-    display: flex; 
-    /* al displa:flex me permite activar mas propriedades como para centrar ecc... */
+.container-siti{
+    display: flex;
     align-items: center;
     /* centra de forma vertical */
     justify-content: center;
     /* centra de forma orizzontale */
     flex-wrap: wrap;
-   
+    
+    gap:20px;
 }
 
 
 .div-profilo{
     background-color:rgba(110, 107, 107) ;
     /* color a todo el div donde se encuentra todo  h1 h2 p ul  (es un block entero) */
-    width: 375px;
+    width: 350px;
     /* ancho de la pantalla al div al ...% reducimos las dimensiones */
     padding:15px;
     /* padding es un espacio interno entre los elementos
     por ejemplo la foto toma espacio a los costados ecc... */
     text-align: center;
     /* esto centra todo mi texto y elementos  */
-    border-radius:16px;
+    border-radius:15px;
+    
 }
 
 
 
-h1 {
-    font-size: 24px;
-    /* la grandezza de las letras*/
-    margin-top: 20px;
-    /* margin hacia arriva */
-}
 
 
-h2 {
-    color: yellow;
-    /* color de la letra */
-    font-size: 14px;
-    /* la grandezza de las letras*/
-    margin-top: 10px;
-    /* margin hacia arriva */
 
-}
-
-p{
+.parrafo-lista{
     font-size: 14px;
     margin-top: 14px;
      /* margin hacia arriva */
@@ -100,10 +78,14 @@ le metemos un color apenas entre el mouse dentro de a */
 a:hover {
     /* ahora cada vez que valla con el mouse ad a se cambiara el sfondo y el color del texto */
 
-    background-color: burlywood;
+    background-color: rgb(222, 156, 70);
     /* colore dello sfondo */
-    color:red;
+    color:rgb(215, 20, 20);
     /* colore del testo */
+
+    font-size: 30px;
+    font-weight: 500;
+
 }
 
 

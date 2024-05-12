@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./css/index.css";
-import { Link } from "react-router-dom";
+
 
 export default function HeaderQuattro() {
   const [menu, setMenu] = useState(false);
@@ -9,7 +9,7 @@ export default function HeaderQuattro() {
     setMenu(!menu);
   };
 
-  const contact = () => <div>vista contact</div>;
+ 
 
   return (
     <>

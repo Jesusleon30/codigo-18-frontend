@@ -12,7 +12,7 @@ export default function MainTotal() {
     <>
       <div>
         <a
-          className="text-5xl text-blue-300 font-semibold flex items-center justify-center"
+          className="text-5xl text-blue-300 font-semibold flex items-center justify-center  m-10"
           href="#About Me"
         >
           About me
@@ -25,7 +25,7 @@ export default function MainTotal() {
 
       <div id="Skills">
         <a
-          className="text-5xl text-blue-300 font-semibold flex items-center justify-center"
+          className="text-5xl text-blue-300 font-semibold flex items-center justify-center  m-10"
           href="#Skills"
         >
           Skills
@@ -34,7 +34,7 @@ export default function MainTotal() {
       <Lista />
       <div>
         <a
-          className="text-5xl text-blue-300 font-semibold flex items-center justify-center"
+          className="text-5xl text-blue-300 font-semibold flex items-center justify-center m-10"
           href="#Portfolio"
         >
           Portfolio
@@ -46,7 +46,7 @@ export default function MainTotal() {
       <Logo />
       <div>
         <a
-          className="text-5xl text-blue-300 font-semibold flex items-center justify-center"
+          className="text-5xl text-blue-300 font-semibold flex items-center justify-center m-10"
           href="#Contact"
         >
           Contact
