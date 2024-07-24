@@ -5,6 +5,7 @@ import {
   Contador,
   Pokedex,
   Lavori,
+  Products,
 } from "./components";
 
 export default function MainTotal() {
@@ -43,6 +44,7 @@ export default function MainTotal() {
 
       <Contador />
       <Lavori/>
+      <Products/>
       <Logo />
       <div>
         <a

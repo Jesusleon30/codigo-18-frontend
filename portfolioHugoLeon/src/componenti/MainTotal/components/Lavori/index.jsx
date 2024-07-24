@@ -108,7 +108,7 @@ export default function Lavori() {
               <ul>
                 <li>
                   <a className=" a-container-profilo"
-                   className="a-profilo"
+                   //className = "a-profilo"
                     href="https://jesusleon30.github.io/codigo-18-frontend/semana1/challenges/profilo1/index.html"
                     target="_blank"
                   >
