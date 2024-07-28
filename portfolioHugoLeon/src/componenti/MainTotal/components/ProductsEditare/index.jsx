@@ -40,6 +40,13 @@ export default function ProductsEditare() {
           body: formData,
         }
       );
+      if (response.ok) {
+        console.log("Producto registrado con éxito");
+        alert('ok aggiornato')
+      } else {
+        console.error("Error al registrare il prodotto");
+      }
+
 
       // try {
       //   const response = await fetch(
@@ -51,9 +58,12 @@ export default function ProductsEditare() {
       //   );
 
 
-    } catch (error) {
+    }catch (error) {
       console.error("Error:", error);
     }
+    setname("");
+    setprice("");
+
   };
 
   const handleFileChange = (e) => {

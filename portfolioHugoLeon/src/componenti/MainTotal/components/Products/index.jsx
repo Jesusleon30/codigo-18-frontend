@@ -37,11 +37,16 @@ export default function FormPage() {
     } catch (error) {
       console.error("Error:", error);
     }
+    setname("");
+    setprice("");
+
   };
+
 
   const handleFileChange = (e) => {
     setImage(e.target.files[0]); // Guarda el archivo seleccionado como un objeto File
   };
+
 
   return (
     <>
