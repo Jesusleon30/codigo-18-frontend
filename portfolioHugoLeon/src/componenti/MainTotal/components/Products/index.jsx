@@ -1,3 +1,5 @@
+import "./css/index.css";
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -51,8 +53,8 @@ export default function FormPage() {
   return (
     <>
 
-      <main className="mt-10 mx-auto max-w-6xl p-10 bg-yellow-500 shadow rounded-xl">
-        <div className="flex flex-col gap-5  items-center justify-between">
+      <main className="mt-10 mx-auto max-w-4xl p-10 bg-yellow-500 shadow rounded-xl  ">
+        <div className="flex flex-col gap-5  items-center justify-between container-sitio1">
         <Link to="/products">
             <button className="mt-4 bg-orange-700 hover:bg-purpuple-700 text-white font-bold py-2 px-4 rounded">
               Lista Corsi

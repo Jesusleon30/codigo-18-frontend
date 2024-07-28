@@ -18,7 +18,7 @@ export default function FooterUno(props) {
           likes {props.hola} {props.lastname} {counter} 
         </button>
       </div>
-      <div id="Contact" className="container-footer text">
+      <div id="Contact" className="container-footer text container-sitio">
         <div>Design Studio 3D animation</div>
         <div>Jesus Hugo Retamozo Leon</div>
         <div>Automazione</div>

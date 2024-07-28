@@ -68,12 +68,13 @@ export default function ProductsLista() {
           </h1>
         </div>
       </header>
-      <main className="mt-20 mx-auto max-w-6xl  p-3 bg-cyan-700 shadow rounded-xl">
+      <main className="mt-20 mx-auto flex-wrap max-w-5xl p-3 bg-cyan-700 shadow rounded-xl ">
         {dataAPI.length > 0 ? (
-          <ul>
+          <ul className="   ">
+           
             {dataAPI.map((product) => (
-              <li key={product.id} className="mb-8 ">
-                <div className="flex  gap-5 items-center rounded-lg shadow-sm p-2">
+              <li key={product.id} className="mb-8">
+                <div className="md:flex  gap-5 items-center rounded-lg shadow-sm p-2">
                   <img
                     src={product.image}
                     alt={product.name}
@@ -86,7 +87,8 @@ export default function ProductsLista() {
                       <p className="text-white  ">data di creazione {product.created_at}</p>
                       <p className="text-white ">data di aggiornamento {product.updated_at}</p>
                     </div>
-                    <div className="flex gap-2">
+
+                    <div className="flex flex-col gap-2">
                       <button className="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-900 dark:hover:bg-green-700 dark:focus:ring-blue-900">
                         <Link to={`/edit/${product.id}`}>Editare 🖋</Link>
                       </button>
@@ -97,9 +99,12 @@ export default function ProductsLista() {
                       >
                         Eliminare ☠
                       </button>
+                      
                     </div>
                   </div>
+                  
                 </div>
+                <hr className="divider" />
               </li>
             ))}
           </ul>
