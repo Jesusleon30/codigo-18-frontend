@@ -12,19 +12,27 @@ export default function ProductsLista() {
   // Función para obtener los datos de la API
   const getData = async () => {
     try {
-      const response = await fetch ("http://127.0.0.1:8000/api/v1/products/");
+      const response = await fetch ("https://django-portfolio-leon.onrender.com/api/v1/products/");
       const data = await response.json();
       setDataApi(data);
     } catch (error) {
       console.error("Error fetching data: ", error);
     }
+
+    // try {
+    //   const response = await fetch ("http://127.0.0.1:8000/api/v1/products/");
+    //   const data = await response.json();
+    //   setDataApi(data);
+    // } catch (error) {
+    //   console.error("Error fetching data: ", error);
+    // }
   };
 
   // Función para eliminar un producto
   const deleteData = async (id) => {
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/api/v1/products/${id}`,
+        `https://django-portfolio-leon.onrender.com/api/v1/products/${id}/`,
         {
           method: "DELETE",
           headers: {
@@ -33,6 +41,19 @@ export default function ProductsLista() {
         }
       );
       getData();
+
+      // try {
+      //   const response = await fetch(
+      //     `http://127.0.0.1:8000/api/v1/products/${id}/`,
+      //     {
+      //       method: "DELETE",
+      //       headers: {
+      //         "Content-Type": "application/json",
+      //       },
+      //     }
+      //   );
+      //   getData();
+
     } catch (error) {
       console.error("Error eliminando el producto", error);
     }
@@ -41,27 +62,29 @@ export default function ProductsLista() {
   return (
     <>
       <header>
-        <div className="mx-auto max-w-6xl py-6">
-          <h1 className="text-4xl font-extrabold text-white">
-            Lista dei Prodotti
+        <div className="mx-auto max-w-6xl py-5">
+          <h1 className="text-5xl  font-extrabold text-white flex flex-col items-center">
+            Lista dei Corsi
           </h1>
         </div>
       </header>
-      <main className="mt-10 mx-auto max-w-6xl p-10 bg-orange-300 shadow rounded-xl">
+      <main className="mt-20 mx-auto max-w-6xl  p-3 bg-cyan-700 shadow rounded-xl">
         {dataAPI.length > 0 ? (
           <ul>
             {dataAPI.map((product) => (
-              <li key={product.id} className="mb-4">
-                <div className="flex gap-3 items-center rounded-lg shadow-sm p-2">
+              <li key={product.id} className="mb-8 ">
+                <div className="flex  gap-5 items-center rounded-lg shadow-sm p-2">
                   <img
                     src={product.image}
-                    alt={product.nombre}
-                    className="rounded-lg max-w-12 shadow-sm"
+                    alt={product.name}
+                    className="rounded-lg h-20 max-w-15  shadow-sm"
                   />
-                  <div className="w-full flex justify-between">
+                  <div className="w-full flex  justify-between items-center">
                     <div>
-                      <h2 className="text-2xl font-bold">✨ {product.nombre}</h2>
-                      <p className="text-lg">Prezzo: euro/ {product.precio}</p>
+                      <h2 className="text-2xl font-bold">✨ {product.name}</h2>
+                      <p className="text-lg font-medium">Prezzo: euro/ {product.price}</p>
+                      <p className="text-white  ">data di creazione {product.created_at}</p>
+                      <p className="text-white ">data di aggiornamento {product.updated_at}</p>
                     </div>
                     <div className="flex gap-2">
                       <button className="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-900 dark:hover:bg-green-700 dark:focus:ring-blue-900">
@@ -70,7 +93,7 @@ export default function ProductsLista() {
 
                       <button
                         onClick={() => deleteData(product.id)}
-                        className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+                        className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-semibold rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-800 dark:focus:ring-red-900"
                       >
                         Eliminare ☠
                       </button>

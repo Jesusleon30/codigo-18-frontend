@@ -21,7 +21,10 @@ export default function FooterUno(props) {
       <div id="Contact" className="container-footer text">
         <div>Design Studio 3D animation</div>
         <div>Jesus Hugo Retamozo Leon</div>
-        <div>Automation and Robotic</div>
+        <div>Automazione</div>
+        <div>Robotica</div>
+        <div>Developer Full Stack</div>
+        <div>Fronted and Backend</div>
         <div>2024</div>
         <div className="img-footer m-3">
           <div>

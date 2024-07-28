@@ -4,16 +4,19 @@ import { useParams } from "react-router-dom";
 
 export default function ProductsEditare() {
   const { id } = useParams();
-  const [nombre, setNombre] = useState("");
-  const [precio, setPrecio] = useState("");
+  const [name, setname] = useState("");
+  const [price, setprice] = useState("");
   const [image, setImage] = useState(null); // Para almacenar la nueva imagen
   const [currentImage, setCurrentImage] = useState(""); // Para almacenar la URL de la imagen actual
 
   const getData = async () => {
-    const data = await fetch(`http://127.0.0.1:8000/api/v1/products/${id}`);
+    const data = await fetch(`https://django-portfolio-leon.onrender.com/api/v1/products/${id}/`);
+
+    // const data = await fetch(`http://127.0.0.1:8000/api/v1/products/${id}/`);
+
     const response = await data.json();
-    setNombre(response.nombre);
-    setPrecio(response.precio);
+    setname(response.name);
+    setprice(response.price);
     //  setCurrentImage(response.image); // Establece la URL de la imagen actual
   };
 
@@ -25,18 +28,29 @@ export default function ProductsEditare() {
     e.preventDefault();
 
     const formData = new FormData();
-    formData.append("nombre", nombre);
-    formData.append("precio", precio);
+    formData.append("name", name);
+    formData.append("price", price);
     if (image) formData.append("image", image);
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:8000/api/v1/products/${id}`,
+        `https://django-portfolio-leon.onrender.com/api/v1/products/${id}/`,
         {
           method: "PUT",
           body: formData,
         }
       );
+
+      // try {
+      //   const response = await fetch(
+      //     `http://127.0.0.1:8000/api/v1/products/${id}/`,
+      //     {
+      //       method: "PUT",
+      //       body: formData,
+      //     }
+      //   );
+
+
     } catch (error) {
       console.error("Error:", error);
     }
@@ -56,27 +70,27 @@ export default function ProductsEditare() {
 
         <form onSubmit={handleSubmit} className="flex flex-col">
           <div className="flex flex-col gap-3 mt-2">
-            <label htmlFor="nombre" className="text-1xl">
+            <label htmlFor="name" className="text-1xl">
               Nome del Prodotto:
             </label>
             <input
-              id="nombre"
-              name="nombre"
+              id="name"
+              name="name"
               type="text"
-              value={nombre}
-              onChange={(e) => setNombre(e.target.value)}
+              value={name}
+              onChange={(e) => setname(e.target.value)}
               placeholder="Nome del prodotto"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             />
-            <label htmlFor="precio" className="text-1xl">
+            <label htmlFor="price" className="text-1xl">
               Prezzo:
             </label>
             <input
-              id="precio"
-              name="precio"
+              id="price"
+              name="price"
               type="text"
-              value={precio}
-              onChange={(e) => setPrecio(e.target.value)}
+              value={price}
+              onChange={(e) => setprice(e.target.value)}
               placeholder="Prezzo del prodotto"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             />
