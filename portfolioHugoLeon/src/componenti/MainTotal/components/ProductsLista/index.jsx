@@ -104,7 +104,6 @@ export default function ProductsLista() {
                   </div>
                   
                 </div>
-                <hr className="divider" />
               </li>
             ))}
           </ul>
