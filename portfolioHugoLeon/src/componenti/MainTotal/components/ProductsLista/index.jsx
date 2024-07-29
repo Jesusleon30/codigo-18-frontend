@@ -58,6 +58,7 @@ export default function ProductsLista() {
       console.error("Error eliminando el producto", error);
     }
   };
+  
 
   return (
     <>
@@ -84,8 +85,8 @@ export default function ProductsLista() {
                     <div>
                       <h2 className="text-2xl font-bold">✨ {product.name}</h2>
                       <p className="text-lg font-medium">Prezzo: euro/ {product.price}</p>
-                      <p className="text-white  ">data di creazione {product.created_at}</p>
-                      <p className="text-white ">data di aggiornamento {product.updated_at}</p>
+                      <p className="text-white  ">Creazione Data {product.created_at.slice(0 ,10)} ora {product.created_at.slice(11 ,19)}</p>
+                      <p className="text-white ">Aggiornamento Data {product.created_at.slice(0 ,10)} ora {product.created_at.slice(11 ,19)}</p>
                     </div>
 
                     <div className="flex flex-col gap-2">
